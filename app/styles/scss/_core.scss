@@ -1,0 +1,109 @@
+*{
+    font-family: 'Raleway';
+}
+
+body {
+    background-color: #FFD271;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+
+    .brand{
+        display: flex;
+        .logo {
+            height: 35px;
+            min-width: 135px;
+            margin: 0 80px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('/app/assets/logo.png');
+        }
+        .btn{
+            background-color: white;
+            font-weight: 700;
+            border-radius: 10px;
+            border: none;
+            padding: 7px 50px;
+            font-size: 16px;
+        }
+    }
+
+    nav {
+        display: flex;
+
+        a {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            margin-right: 80px;
+            transition: 0.15s ease-in-out;
+            line-height: 35px;
+
+            &:hover {
+                color: #333;
+            }
+        }
+    }
+}
+
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.price{
+    font-size:72px;
+    font-weight: 900;
+    &.discount{
+        font-size: 96px;
+
+        ::before{
+            content: '';
+            background-color:#FFD271;
+            display: block;
+            position: absolute;
+            height: 18px;
+            width: 285px;
+            bottom: 28px;
+            right: 77px;
+        }
+        span{
+            font-size: 36px;
+            position: relative;
+        }
+        
+    }
+    span{
+        font-size: 24px;
+    }
+}
+
+.illustration{
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.flex {
+    display: flex;
+}

@@ -1,0 +1,44 @@
+.fp-tableCell {
+    padding: 0 80px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav {
+    ul li a span {
+        background-color: white;
+        height: 16px;
+        width: 16px;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+    background-color: #000;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    height: 17px;
+    width: 18px;
+    margin: 0 20px;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+    background-color: #000;
+}
+
+.fp-slidesNav {
+    padding-left: 80px;
+}
