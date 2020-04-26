@@ -22,7 +22,7 @@ header {
             margin: 0 80px;
             background-repeat: no-repeat;
             background-size: contain;
-            background-image: url('/app/assets/logo.png');
+            background-image: url('../../assets/logo.png');
         }
         .btn{
             background-color: white;
@@ -31,6 +31,10 @@ header {
             border: none;
             padding: 7px 50px;
             font-size: 16px;
+            transition: 0.15s ease-in-out;
+            &:hover{
+                background-color: #eee;
+            }
         }
     }
 
@@ -47,10 +51,14 @@ header {
             line-height: 35px;
 
             &:hover {
-                color: #333;
+                color: #666;
             }
         }
     }
+}
+
+button{
+    cursor: pointer;
 }
 
 h1 {

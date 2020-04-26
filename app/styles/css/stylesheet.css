@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Raleway";
-  src: url("/app/assets/fonts/Raleway-Bold.eot");
-  src: url("/app/assets/fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("/app/assets/fonts/Raleway-Bold.woff") format("woff"), url("/app/assets/fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("../../assets/fonts/Raleway-Bold.eot");
+  src: url("../../assets/fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Raleway-Bold.woff") format("woff"), url("../../assets/fonts/Raleway-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("/app/assets/fonts/Raleway-Regular.eot");
-  src: url("/app/assets/fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("/app/assets/fonts/Raleway-Regular.woff") format("woff"), url("/app/assets/fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("../../assets/fonts/Raleway-Regular.eot");
+  src: url("../../assets/fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Raleway-Regular.woff") format("woff"), url("../../assets/fonts/Raleway-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("/app/assets/fonts/Raleway-Black.eot");
-  src: url("/app/assets/fonts/Raleway-Black.eot?#iefix") format("embedded-opentype"), url("/app/assets/fonts/Raleway-Black.woff") format("woff"), url("/app/assets/fonts/Raleway-Black.ttf") format("truetype");
+  src: url("../../assets/fonts/Raleway-Black.eot");
+  src: url("../../assets/fonts/Raleway-Black.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Raleway-Black.woff") format("woff"), url("../../assets/fonts/Raleway-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -549,7 +549,7 @@ header .brand .logo {
   margin: 0 80px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("/app/assets/logo.png");
+  background-image: url("../../assets/logo.png");
 }
 header .brand .btn {
   background-color: white;
@@ -558,6 +558,10 @@ header .brand .btn {
   border: none;
   padding: 7px 50px;
   font-size: 16px;
+  transition: 0.15s ease-in-out;
+}
+header .brand .btn:hover {
+  background-color: #eee;
 }
 header nav {
   display: flex;
@@ -573,6 +577,10 @@ header nav a {
 }
 header nav a:hover {
   color: #333;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1 {
