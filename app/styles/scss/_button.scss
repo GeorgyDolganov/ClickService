@@ -1,0 +1,91 @@
+.btn {
+    background-color: $yellow;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    padding: 14px 30px;
+    font-size: 24px;
+    color: black;
+    margin-top: 40px;
+    -webkit-box-shadow: 0px 5px 0px 0px $yellow-shadow;
+    -moz-box-shadow: 0px 5px 0px 0px $yellow-shadow;
+    box-shadow: 0px 5px 0px 0px $yellow-shadow;
+    position:relative;
+    top:0;
+    display: flex;
+
+    &-big {
+        padding: 20px 80px;
+
+    }
+
+    .emoji {
+        font-size: 36px;
+        line-height: 24px;
+    }
+    .text{
+        margin: auto 0 auto 5px;
+    }
+
+    &:hover {
+        -webkit-box-shadow: 0px 3px 0px 0px $yellow-shadow;
+        -moz-box-shadow: 0px 3px 0px 0px $yellow-shadow;
+        box-shadow: 0px 3px 0px 0px $yellow-shadow;
+        top: 2px;
+    }
+
+    &-purple {
+        color: white;
+        background-color: $purple;
+        -webkit-box-shadow: 0px 5px 0px 0px $puprle-shadow;
+        -moz-box-shadow: 0px 5px 0px 0px $puprle-shadow;
+        box-shadow: 0px 5px 0px 0px $puprle-shadow;
+
+        &:hover {
+            -webkit-box-shadow: 0px 3px 0px 0px $puprle-shadow;
+            -moz-box-shadow: 0px 3px 0px 0px $puprle-shadow;
+            box-shadow: 0px 3px 0px 0px $puprle-shadow;
+        }
+    }
+
+    &-cyan {
+        background-color: $cyan;
+        -webkit-box-shadow: 0px 5px 0px 0px $cyan-shadow;
+        -moz-box-shadow: 0px 5px 0px 0px $cyan-shadow;
+        box-shadow: 0px 5px 0px 0px $cyan-shadow;
+
+        &:hover {
+            -webkit-box-shadow: 0px 3px 0px 0px $cyan-shadow;
+            -moz-box-shadow: 0px 3px 0px 0px $cyan-shadow;
+            box-shadow: 0px 3px 0px 0px $cyan-shadow;
+        }
+    }
+
+    &-red {
+        background-color: $red;
+        color: white;
+        -webkit-box-shadow: 0px 5px 0px 0px $red-shadow;
+        -moz-box-shadow: 0px 5px 0px 0px $red-shadow;
+        box-shadow: 0px 5px 0px 0px $red-shadow;
+
+        &:hover {
+            -webkit-box-shadow: 0px 3px 0px 0px $red-shadow;
+            -moz-box-shadow: 0px 3px 0px 0px $red-shadow;
+            box-shadow: 0px 3px 0px 0px $red-shadow;
+        }
+    }
+
+    &-blue {
+        background-color: $blue;
+        color: white;
+        -webkit-box-shadow: 0px 5px 0px 0px $blue-shadow;
+        -moz-box-shadow: 0px 5px 0px 0px $blue-shadow;
+        box-shadow: 0px 5px 0px 0px $blue-shadow;
+
+        &:hover {
+            -webkit-box-shadow: 0px 3px 0px 0px $blue-shadow;
+            -moz-box-shadow: 0px 3px 0px 0px $blue-shadow;
+            box-shadow: 0px 3px 0px 0px $blue-shadow;
+        }
+    }
+}

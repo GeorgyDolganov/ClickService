@@ -13,6 +13,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="app/styles/css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="app/styles/css/emoji.css" />
     <link rel="stylesheet" type="text/css" href="app/styles/css/stylesheet.css" />
 </head>
 
@@ -26,7 +27,7 @@
     <header>
         <div class="brand">
             <div class="logo"></div>
-            <button class="btn">Записаться на вебинар</button>
+            <button class="btn-header">Записаться на вебинар</button>
         </div>
         <nav id="menu">
             <div data-menuanchor="WeAreSearchingForYou">
@@ -51,6 +52,10 @@
                     <p>Сделаем для вас онлайн курс под ключ за 5 дней от идеи до запуска!</p>
                     <div class="price discount">99000<span>руб.</span></div>
                     <div class="price">49000<span>руб.</span></div>
+                    <button class="btn btn-big btn-purple">
+                        <span class="emoji"><i class="twa twa-thinking-face"></i></span>
+                        <span class="text">Заказать</span>
+                    </button>
                 </div>
                 <div class="col-md-6">
                     <div class="illustration" style="background-image:url('app/assets/illustrations/1.svg');"></div>
@@ -61,8 +66,14 @@
             <div class="flex">
                 <div class="col-md-6">
                     <h1>Приглашаем к сотрудничеству экспертов в разных областях!</h1>
-                    <p>Полностью упакуем Ваши компетенции в онлайн курс или школу, 
-                        возьмем на себя всю организацию и затраты! </p>
+                    <p>
+                        Полностью упакуем Ваши компетенции в онлайн курс или школу, 
+                        возьмем на себя всю организацию и затраты! 
+                    </p>
+                    <button class="btn btn-big btn-red">
+                        <span class="emoji"><i class="twa twa-winking-face-with-tongue"></i></span>
+                        <span class="text">Написать в WhatsUp</span>
+                    </button>
                 </div>
                 <div class="col-md-6">
                     <div class="illustration" style="background-image:url('app/assets/illustrations/2.svg');"></div>
@@ -70,63 +81,229 @@
             </div>
         </div>
         <div class="section" data-anchor="WeCanHelpYou">
+            <h1 class="slide-sticky">Мы оказываем услуги, связанные с онлайн образованием, как в комплексе, так и по отдельности
+            </h1>
             <div class="slide">
-                <div class="col-md-5">
-                    <h2>Чат-боты в мессенджерах и соц сетях</h2>
-                    <div class="price">10000<span>руб.</span></div>
+                <div class="flex">
+                    <div class="col-md-5 slide-info">
+                        <h2>Чат-боты в мессенджерах и соц сетях</h2>
+                        <div class="price-range">
+                            <span>от</span>
+                            <div class="price">10000<span>руб.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 slide-illustration">
+                        <div class="illustration" style="background-image:url('app/assets/illustrations/3.svg');"></div>
+                        <button class="btn btn-purple">
+                            <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
+                            <span class="text">Заказать</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="slide" style="background-color: #b86ee6;">
-                <div class="col-md-5">
-                    <h2>Настройка платформ для размещения онлайн курсов</h2>
-                    <div class="price">20000<span>руб.</span></div>
+                <div class="flex">
+                    <div class="col-md-5 slide-info">
+                        <h2>Настройка платформ для размещения онлайн курсов</h2>
+                        <div class="price-range">
+                            <span>от</span>
+                            <div class="price">20000<span>руб.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 slide-illustration">
+                        <div class="illustration" style="background-image:url('app/assets/illustrations/4.svg');"></div>
+                        <button class="btn btn-red">
+                            <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
+                            <span class="text">Заказать</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="slide" style="background-color: #36c7cc;">
-                <div class="col-md-5">
-                    <h2>Настройка автоворонок в мессенджерах и соц сетях</h2>
-                    <div class="price">20000<span>руб.</span></div>
+                <div class="flex">
+                    <div class="col-md-5 slide-info">
+                        <h2>Настройка автоворонок в мессенджерах и соц сетях</h2>
+                        <div class="price-range">
+                            <span>от</span>
+                            <div class="price">30000<span>руб.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 slide-illustration">
+                        <div class="illustration" style="background-image:url('app/assets/illustrations/5.svg');"></div>
+                        <button class="btn btn-purple">
+                            <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
+                            <span class="text">Заказать</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="slide" style="background-color: #ffd271;">
-                <div class="col-md-5">
-                    <h2>Настройка вебинарных автоворонок</h2>
-                    <div class="price">20000<span>руб.</span></div>
+                <div class="flex">
+                    <div class="col-md-5 slide-info">
+                        <h2>Настройка вебинарных автоворонок</h2>
+                        <div class="price-range">
+                            <span>от</span>
+                            <div class="price">40000<span>руб.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 slide-illustration">
+                        <div class="illustration" style="background-image:url('app/assets/illustrations/6.svg');"></div>
+                        <button class="btn btn-blue">
+                            <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
+                            <span class="text">Заказать</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="slide" style="background-color: #51a7ff;">
-                <div class="col-md-5">
-                    <h2>Упаковка онлайн курсов “под ключ”</h2>
-                    <div class="price">20000<span>руб.</span></div>
+                <div class="flex">
+                    <div class="col-md-5 slide-info">
+                        <h2>Упаковка онлайн курсов “под ключ”</h2>
+                        <div class="price-range">
+                            <span>от</span>
+                            <div class="price">50000<span>руб.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 slide-illustration">
+                        <div class="illustration" style="background-image:url('app/assets/illustrations/7.svg');"></div>
+                        <button class="btn btn-red">
+                            <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
+                            <span class="text">Заказать</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="section" data-anchor="HereAreExamples">
+            <h1 class="slide-sticky">Вот несколько примеров популярных сейчас курсов</h1>
             <div class="slide">
-                <div class="col-md-5">
-                    <h2>Конструктор чат ботов</h2>
+                <div class="flex">
+                    <div class="col-md-5 slide-info">
+                        <h2>Конструктор чат ботов</h2>
+                    </div>
+                    <div class="col-md-7 slide-illustration">
+                        <div class="illustration" style="background-image:url('app/assets/illustrations/8.svg');"></div>
+                        <button class="btn btn-blue">
+                            <span class="emoji"><i class="twa twa-victory-hand"></i></span>
+                            <span class="text">Заказать</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="slide" style="background-color: #b86ee6;">
-                <div class="col-md-5">
-                    <h2>Как делать маски в инстаграм</h2>
+                <div class="flex">
+                    <div class="col-md-5 slide-info">
+                        <h2>Как делать маски в инстаграм</h2>
+                    </div>
+                    <div class="col-md-7 slide-illustration">
+                        <div class="illustration" style="background-image:url('app/assets/illustrations/9.svg');"></div>
+                        <button class="btn btn-red">
+                            <span class="emoji"><i class="twa twa twa-victory-hand"></i></span>
+                            <span class="text">Заказать</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="slide" style="background-color: #36c7cc;">
-                <div class="col-md-5">
-                    <h2>Как сделать онлайн школу</h2>
+                <div class="flex">
+                    <div class="col-md-5 slide-info">
+                        <h2>Как сделать онлайн школу</h2>
+                    </div>
+                    <div class="col-md-7 slide-illustration">
+                        <div class="illustration" style="background-image:url('app/assets/illustrations/10.svg');"></div>
+                        <button class="btn btn-purple">
+                            <span class="emoji"><i class="twa twa twa-victory-hand"></i></span>
+                            <span class="text">Заказать</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="section" data-anchor="Contacts">
             <div class="flex">
-                <div class="col-md-6">
+                <div class="slide-sticky">
                     <h1>Обратная связь</h1>
+                    <p>Если у вас остались вопросы, напишите нам</p>
+                </div>
+                <div class="form">
+                    <div class="front image_holder"></div>
+                    <div class="form_wrap">
+                        <form class="feedback">
+                            <input type="hidden" name="type" value="landing_question">
+                            <div class="field">
+                                <input type="email" placeholder="Email" name="email" required="" autocomplete="off">
+                            </div>
+                            <div class="field">
+                                <textarea class="question check_field" placeholder="Сообщение" name="message" autocomplete="off"></textarea>
+                            </div>
+                            <div class="field_check">
+                                <input type="checkbox" name="agree" id="field-order-agree" required="">
+                                <label for="field-order-agree">Я согласен(а) c условиями <a href="/docs/privacy-policy.pdf" target="_blank">политики обработки персональных данных</a>, <a href="/docs/user-agreement.pdf" target="_blank">пользовательского соглашения</a> и <a href="/docs/public-offer.pdf" target="_blank">публичной оферты</a></label>
+                            </div>
+                            <div class="actions">
+                                <button class="btn btn-blue" data-action="send_order">
+                                    <span class="emoji"><i class="twa twa-face-blowing-a-kiss"></i></span>
+                                    <span class="text">Отрпавить</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-7 contacts">
+                    <h2>Контакты</h2>
+                    <p>
+                        ООО «Кликсервис». Москва, Походный проезд 4, строение 1, офис 405<br>
+                        Телефоны: 8 (495) 414-32-52, 8 (800) 350-14-85<br>
+                        Email: info+588725@clickchat.me 
+                    </p>
+                    <h3>РЕКВИЗИТЫ</h3>
+                    <p>
+                        Юридический адрес: 129336, РФ, г. Москва, ул. Малыгина, д. 2, стр. подв.п. 1, к298 о29<br>
+                        ИНН: 7716894954<br>
+                        ОГРН: 1187746165562<br>
+                        КПП: 773301001<br>
+                        Расчетный счет: 40702810310000291039<br>
+                    </p><p>
+                        Наименование банка: АО "ТИНЬКОФФ БАНК"<br>
+                        Юридический адрес банка: Москва, 123060, 1-й Волоколамский проезд, д. 10, стр. 1<br>
+                        Корр счет банка: 30101810145250000974<br>
+                        ИНН банка: 771014679<br>
+                        БИК банка: 044525974<br>
+                    </p>
+                    <h3>Карта сайта</h3>
+                    <nav id="menu">
+                        <div data-menuanchor="WeAreSearchingForYou">
+                            <a href="#WeAreSearchingForYou">Сотрудничество</a>
+                        </div>
+                        <div data-menuanchor="WeCanHelpYou">
+                            <a href="#WeCanHelpYou">Услуги</a>
+                        </div>
+                        <div data-menuanchor="HereAreExamples">
+                            <a href="#HereAreExamples">Примеры курсов</a>
+                        </div>
+                        <div data-menuanchor="Contacts">
+                            <a href="#Contacts">Контакты</a>
+                        </div>
+                    </nav>
+                    <h3>Документы</h3>
+                    <nav id="menu">
+                        <div>
+                            <a href="#WeAreSearchingForYou">Пользовательское соглашение</a>
+                        </div>
+                        <div>
+                            <a href="#WeCanHelpYou">Публичная оферта</a>
+                        </div>
+                        <div>
+                            <a href="#HereAreExamples">Политика обработки персональных данных</a>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>  
     <script type="text/javascript" src="app/js/fullpage.js"></script>
+    <script type="text/javascript" src="app/js/emojify.js"></script>
     <script type="text/javascript" src="app/js/engine.js"></script>
 </body>
 
