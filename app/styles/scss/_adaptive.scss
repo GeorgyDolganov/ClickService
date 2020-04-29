@@ -270,6 +270,24 @@ $breakpoint-desktop: 1300px;
             display: none;
         }
     }
+
+    .flex {
+        .col-lg-6:first-child {
+            order: 2;
+        }
+
+        .col-lg-6:last-child {
+            order: 1;
+        }
+
+        .col-lg-5:first-child {
+            order: 2;
+        }
+
+        .col-lg-7:last-child {
+            order: 1;
+        }
+    }
 }
 
 @media (max-width: $breakpoint-desktop) and (min-width:$breakpoint-tablet) {
@@ -548,23 +566,6 @@ $breakpoint-desktop: 1300px;
         }
     }
 
-    .flex {
-        .col-lg-6:first-child {
-            order: 2;
-        }
-
-        .col-lg-6:last-child {
-            order: 1;
-        }
-
-        .col-lg-5:first-child {
-            order: 2;
-        }
-
-        .col-lg-7:last-child {
-            order: 1;
-        }
-    }
 
     .slide {
         &-sticky {
