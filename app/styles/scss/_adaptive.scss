@@ -1,16 +1,138 @@
 $breakpoint-phone: 576px;
 $breakpoint-tablet: 768px;
-$breakpoint-desktop: 992px;
+$breakpoint-desktop: 1300px;
 
-@media (min-width: $breakpoint-tablet) {
+@media (min-width: $breakpoint-desktop) {
     .form{
         bottom: 80px;
     }
-
     .d-sm-block{
         display: none!important;
     }
+}
 
+@media (max-width: $breakpoint-desktop){
+    header {
+        .brand {
+            .logo {
+                margin: 0px 20px 0 80px;
+                min-width: 100px;
+                height: 26px;
+            }
+            .btn-header {
+                padding: 7px;
+                font-size: 12px;
+            }
+        }
+        nav {
+            display: none;
+        }
+    }
+
+    .contacts{
+        .col-md-7{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-desktop) and (min-width:$breakpoint-tablet){
+    header {
+        nav {
+            div{
+                a {
+                    margin-right: 20px;
+                    font-size: 14px;
+                    
+                }
+            }
+        }
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-bottom: 40px;
+
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .illustration {
+        height: 300px;
+        margin: auto;
+    }
+    
+    .price{
+        font-size: 50px;
+        &.discount{
+            font-size: 60px;
+            span{
+                font-size: 20px;
+            }
+            ::before {
+                content: "";
+                background-color: #FFD170;
+                display: block;
+                position: absolute;
+                height: 10px;
+                width: 181px;
+                bottom: 18px;
+                right: 44px;
+            }
+        }
+        span {
+            font-size: 16px;
+        }
+
+        &:last-child{
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .btn {
+        &-big {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    }
+    .slide{
+        &-illustration{
+            display: flex;
+            .btn{
+                position: absolute;
+                top: auto;
+                bottom: 0;
+                right: 0;
+                height: 60px;
+                float: none;
+            }
+        }
+    }
+
+    .form{
+        bottom: 30px;
+        .front {
+            background-size: cover;
+            background-position: top center;
+            height: 50%;
+        }
+        &:after {
+            height: 50%;
+        }
+        &:hover{
+            .form_wrap{
+                height: 490.96px;        
+            }
+        }
+    }
+    
 }
 
 @media (max-width: $breakpoint-tablet) {
@@ -167,12 +289,9 @@ $breakpoint-desktop: 992px;
     }
 
     .form{
-        position: absolute;
         width: calc( 100% - 30px );
-        min-height: 220px;
         left: 15px;
         bottom: 15px;
-        transition: 0.3s ease-in-out;
         .front {
             width: 100%;
             background-size: cover;
@@ -190,47 +309,9 @@ $breakpoint-desktop: 992px;
             }
         }
     
-        .field {
-            margin-bottom: 10px;
-            & input, textarea {
-                border: solid 2px #e3e8f1;
-                border-radius: 10px;
-                padding: 10px 15px;
-                font-size: 12px;
-                font-weight: 700;
-                line-height: 20px;
-                width: 100%;
-                box-sizing: border-box;
-                max-width: 100%;
-                min-width: 100%;
-                max-height: 40px;
-            }
-        }
-    
         .actions{
             .btn{
                 margin: auto;
-            }
-        }
-    
-        .field_check {
-            text-align: left;
-            display: flex;
-            margin-bottom: 20px;
-            input {
-                float: left;
-                margin: 0 10px 0 0;
-                width: 13px;
-            }
-            label {
-                font-size: 12px;
-                line-height: 12px;
-                display: block;
-                font-weight: 700;
-                width: 100%;
-                a{
-                    color:black;
-                }
             }
         }
     
