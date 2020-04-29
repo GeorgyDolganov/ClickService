@@ -43,6 +43,32 @@
                 <a href="#Contacts">Контакты</a>
             </div>
         </nav>
+        <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+        <input id="toggle" type="checkbox">
+
+        <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+
+        <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+        <label class="toggle-container" for="toggle">
+        <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+        <span class="button button-toggle"></span>
+        </label>
+
+        <!-- Навигация -->
+        <nav class="nav" id="menu">
+            <div data-menuanchor="WeAreSearchingForYou">
+                <a rel="nofollow" rel="noreferrer" class="nav-item" href="#WeAreSearchingForYou">Сотрудничество</a>
+            </div>
+            <div data-menuanchor="WeCanHelpYou">
+                <a rel="nofollow" rel="noreferrer" class="nav-item"  href="#WeCanHelpYou">Услуги</a>
+            </div>
+            <div data-menuanchor="HereAreExamples">
+                <a rel="nofollow" rel="noreferrer" class="nav-item"  href="#HereAreExamples">Примеры курсов</a>
+            </div>
+            <div data-menuanchor="Contacts">
+                <a rel="nofollow" rel="noreferrer" class="nav-item"  href="#Contacts">Контакты</a>
+            </div>
+        </nav>
     </header>
     <div id="fullpage">
         <div class="section" data-anchor="Hello!">
