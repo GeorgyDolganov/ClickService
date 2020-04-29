@@ -75,8 +75,9 @@ $breakpoint-desktop: 992px;
             }
         }
         &-range{
-            position: relative;
-            top: 35px;        
+            position: absolute;
+            bottom: -70px;
+           
             span{
                 font-size: 12px;
             }
@@ -235,7 +236,7 @@ $breakpoint-desktop: 992px;
     
         &:after {
             width: 100%;
-            height: 238px;
+            height: 50%;
         }
     
         &:hover .form_wrap {
@@ -286,11 +287,66 @@ $breakpoint-desktop: 992px;
     }
 
     .fp-slidesNav.fp-bottom {
-        bottom: 115px;
+        bottom: 100px;
     }
 
     .d-sm-block{
         display: table;
+    }
+
+}
+
+@media (max-width: 350px){
+    .fp-slidesNav.fp-bottom {
+        bottom: 130px;
+    }
+    .slide-illustration .btn {
+        padding: 10px;
+        top: 440px;
+    }
+    .form {
+        .front{
+            height: 30%;
+        }
+        .form_wrap {
+            width: 100%;
+            margin: 0;
+            height: 370px;
+        }
+        .actions .btn {
+            padding: 10px;
+        }
+        &:after {
+            width: 100%;
+            height: 30%;
+        }
+    }
+
+    .contacts{
+        &-info{
+            p{
+                font-size: 10px;
+            }
+            h3{
+                font-size: 12px;
+            }
+            nav{
+                div{
+                    a{
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .illustration {
+        height: 230px;
+    }
+
+    .btn{
+        padding: 10px;
     }
 
 }
