@@ -44,18 +44,18 @@
             </div>
         </nav>
         <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
-        <input id="toggle" type="checkbox">
+        <input id="toggle" type="checkbox" class="mobile">
 
         <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
 
         <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
-        <label class="toggle-container" for="toggle">
+        <label class="toggle-container mobile" for="toggle">
         <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
-        <span class="button button-toggle"></span>
+        <span class="button button-toggle mobile"></span>
         </label>
 
         <!-- Навигация -->
-        <nav class="nav" id="menu">
+        <nav class="nav mobile" id="menu">
             <div data-menuanchor="WeAreSearchingForYou">
                 <a rel="nofollow" rel="noreferrer" class="nav-item" href="#WeAreSearchingForYou">Сотрудничество</a>
             </div>
@@ -73,28 +73,28 @@
     <div id="fullpage">
         <div class="section" data-anchor="Hello!">
             <div class="flex">
-                <div class="col-md-6 flex">
+                <div class="col-lg-6 flex">
                     <h1>Самое время зарабатывать на своих знаниях!</h1>
                     <p>Сделаем для вас онлайн курс под ключ за 5 дней от идеи до запуска!</p>
-                    <div class="col-7 col-sm-6 col-md-12">
+                    <div class="col-7 col-sm-6 col-lg-12">
                         <div class="price discount">99000<span>руб.</span></div>
                         <div class="price">49000<span>руб.</span></div>
                     </div>
-                    <div class="col-5 col-sm-6 col-md-12">
+                    <div class="col-5 col-sm-6 col-lg-12">
                         <button class="btn btn-big btn-purple">
                             <span class="emoji"><i class="twa twa-thinking-face"></i></span>
                             <span class="text">Заказать</span>
                         </button>
                     </div>
                 </div>
-                <div class="col-md-6 flex">
+                <div class="col-lg-6 flex">
                     <div class="illustration" style="background-image:url('app/assets/illustrations/1.svg');"></div>
                 </div>
             </div>
         </div>
         <div class="section" data-anchor="WeAreSearchingForYou">
             <div class="flex">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h1>Приглашаем к сотрудничеству экспертов в разных областях!</h1>
                     <p>
                         Полностью упакуем Ваши компетенции в онлайн курс или школу, 
@@ -105,7 +105,7 @@
                         <span class="text">Написать в WhatsUp</span>
                     </button>
                 </div>
-                <div class="col-md-6 flex">
+                <div class="col-lg-6 flex">
                     <div class="illustration" style="background-image:url('app/assets/illustrations/2.svg');"></div>
                 </div>
             </div>
@@ -115,14 +115,14 @@
             </h1>
             <div class="slide">
                 <div class="flex">
-                    <div class="col-md-5 slide-info">
+                    <div class="col-lg-5 slide-info">
                         <h2>Чат-боты в мессенджерах и соц сетях</h2>
                         <div class="price-range">
                             <span>от</span>
                             <div class="price">10000<span>руб.</span></div>
                         </div>
                     </div>
-                    <div class="col-md-7 slide-illustration">
+                    <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/3.svg');"></div>
                         <button class="btn btn-purple">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
@@ -133,14 +133,14 @@
             </div>
             <div class="slide" style="background-color: #b86ee6;">
                 <div class="flex">
-                    <div class="col-md-5 slide-info">
+                    <div class="col-lg-5 slide-info">
                         <h2>Настройка платформ для размещения онлайн курсов</h2>
                         <div class="price-range">
                             <span>от</span>
                             <div class="price">20000<span>руб.</span></div>
                         </div>
                     </div>
-                    <div class="col-md-7 slide-illustration">
+                    <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/4.svg');"></div>
                         <button class="btn btn-red">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
@@ -151,14 +151,14 @@
             </div>
             <div class="slide" style="background-color: #36c7cc;">
                 <div class="flex">
-                    <div class="col-md-5 slide-info">
+                    <div class="col-lg-5 slide-info">
                         <h2>Настройка автоворонок в мессенджерах и соц сетях</h2>
                         <div class="price-range">
                             <span>от</span>
                             <div class="price">30000<span>руб.</span></div>
                         </div>
                     </div>
-                    <div class="col-md-7 slide-illustration">
+                    <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/5.svg');"></div>
                         <button class="btn btn-purple">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
@@ -169,14 +169,14 @@
             </div>
             <div class="slide" style="background-color: #ffd271;">
                 <div class="flex">
-                    <div class="col-md-5 slide-info">
+                    <div class="col-lg-5 slide-info">
                         <h2>Настройка вебинарных автоворонок</h2>
                         <div class="price-range">
                             <span>от</span>
                             <div class="price">40000<span>руб.</span></div>
                         </div>
                     </div>
-                    <div class="col-md-7 slide-illustration">
+                    <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/6.svg');"></div>
                         <button class="btn btn-blue">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
@@ -187,14 +187,14 @@
             </div>
             <div class="slide" style="background-color: #51a7ff;">
                 <div class="flex">
-                    <div class="col-md-5 slide-info">
+                    <div class="col-lg-5 slide-info">
                         <h2>Упаковка онлайн курсов “под ключ”</h2>
                         <div class="price-range">
                             <span>от</span>
                             <div class="price">50000<span>руб.</span></div>
                         </div>
                     </div>
-                    <div class="col-md-7 slide-illustration">
+                    <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/7.svg');"></div>
                         <button class="btn btn-red">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
@@ -208,10 +208,10 @@
             <h1 class="slide-sticky">Вот несколько примеров популярных сейчас курсов</h1>
             <div class="slide">
                 <div class="flex">
-                    <div class="col-md-5 slide-info">
+                    <div class="col-lg-5 slide-info">
                         <h2>Конструктор чат ботов</h2>
                     </div>
-                    <div class="col-md-7 slide-illustration courses">
+                    <div class="col-lg-7 slide-illustration courses">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/8.svg');"></div>
                         <button class="btn btn-blue">
                             <span class="emoji"><i class="twa twa-victory-hand"></i></span>
@@ -222,10 +222,10 @@
             </div>
             <div class="slide" style="background-color: #b86ee6;">
                 <div class="flex">
-                    <div class="col-md-5 slide-info">
+                    <div class="col-lg-5 slide-info">
                         <h2>Как делать маски в инстаграм</h2>
                     </div>
-                    <div class="col-md-7 slide-illustration courses">
+                    <div class="col-lg-7 slide-illustration courses">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/9.svg');"></div>
                         <button class="btn btn-red">
                             <span class="emoji"><i class="twa twa twa-victory-hand"></i></span>
@@ -236,10 +236,10 @@
             </div>
             <div class="slide" style="background-color: #36c7cc;">
                 <div class="flex">
-                    <div class="col-md-5 slide-info">
+                    <div class="col-lg-5 slide-info">
                         <h2>Как сделать онлайн школу</h2>
                     </div>
-                    <div class="col-md-7 slide-illustration courses">
+                    <div class="col-lg-7 slide-illustration courses">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/10.svg');"></div>
                         <button class="btn btn-purple">
                             <span class="emoji"><i class="twa twa twa-victory-hand"></i></span>
@@ -278,8 +278,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-5"></div>
-                <div class="col-md-7">
+                <div class="col-lg-5"></div>
+                <div class="col-lg-7">
                     <h2>Контакты</h2>
                     <p>
                         ООО «Кликсервис». Москва, Походный проезд 4, строение 1, офис 405<br>
@@ -331,28 +331,28 @@
             </div>
         </div>
         <div class="section d-sm-block contacts-info" data-anchor="Contacts-2">
-                <h2>Контакты</h2>
-                    <p>
+                <h2 class="col-12">Контакты</h2>
+                    <p class="col-12">
                         ООО «Кликсервис». Москва, Походный проезд 4, строение 1, офис 405<br>
                         Телефоны: 8 (495) 414-32-52, 8 (800) 350-14-85<br>
                         Email: info+588725@clickchat.me 
                     </p>
-                    <h3>РЕКВИЗИТЫ</h3>
-                    <p>
+                    <h3 class="col-12">РЕКВИЗИТЫ</h3>
+                    <p class="col-12">
                         Юридический адрес: 129336, РФ, г. Москва, ул. Малыгина, д. 2, стр. подв.п. 1, к298 о29<br>
                         ИНН: 7716894954<br>
                         ОГРН: 1187746165562<br>
                         КПП: 773301001<br>
                         Расчетный счет: 40702810310000291039<br>
-                    </p><p>
+                    </p><p class="col-12">
                         Наименование банка: АО "ТИНЬКОФФ БАНК"<br>
                         Юридический адрес банка: Москва, 123060, 1-й Волоколамский проезд, д. 10, стр. 1<br>
                         Корр счет банка: 30101810145250000974<br>
                         ИНН банка: 771014679<br>
                         БИК банка: 044525974<br>
                     </p>
-                    <h3>Документы</h3>
-                    <nav id="menu">
+                    <h3 class="col-12">Документы</h3>
+                    <nav id="menu" class="col-12">
                         <div>
                             <a href="#WeAreSearchingForYou">Пользовательское соглашение</a>
                         </div>
