@@ -102,6 +102,7 @@ h3 {
 
 p {
     font-size: 18px;
+    padding: 10px 0;
 }
 
 .slide {
@@ -121,6 +122,7 @@ p {
 
     &-illustration {   
         height: 610px;
+        margin:0;
         button{
             float: right;
 
@@ -129,14 +131,15 @@ p {
 }
 
 .contacts{
-    margin-top: 65px;
-    p{
-        font-size: 16px;
-        + h3{
-            margin-top: 55px;
+    .col-md-7{
+        margin-top: 65px;
+        p{
+            font-size: 16px;
+            + h3{
+                margin-top: 25px;
+            }
         }
-    }
-    
+    } 
 }
 
 .price {
@@ -184,7 +187,6 @@ p {
     position: absolute;
     width: 520.97px;
     min-height: 220px;
-    bottom: 80px;
     left: 65px;
     transition: 0.3s ease-in-out;
     .front {
@@ -289,6 +291,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }

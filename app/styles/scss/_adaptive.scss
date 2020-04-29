@@ -1,0 +1,296 @@
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
+@media (min-width: $breakpoint-tablet) {
+    .form{
+        bottom: 80px;
+    }
+
+    .d-sm-block{
+        display: none!important;
+    }
+
+}
+
+@media (max-width: $breakpoint-tablet) {
+    header {
+        padding: 20px 0;
+        .brand {
+            .logo {
+                margin: 0px 15px 0 30px;
+                min-width: 100px;
+                height: 26px;
+            }
+            .btn-header {
+                padding: 7px;
+                font-size: 12px;
+            }
+        }
+        nav {
+            display: none;
+        }
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .fp-tableCell {
+        padding: 0 45px;
+    }
+
+    .illustration {
+        height: 350px;
+    }
+
+    .price {
+        font-size: 26px;
+        span {
+            font-size: 14px;
+        }
+        &.discount{
+            font-size: 36px;
+
+            span {
+                font-size: 18px;
+            }
+            ::before {
+                height: 7px;
+                width: 110px;
+                bottom: 11px;
+                right: 37px;
+            }
+        }
+        &-range{
+            position: relative;
+            top: 35px;        
+            span{
+                font-size: 12px;
+            }
+
+            .price{
+                margin-top:-15px;
+            }
+        }
+    }
+    
+    .btn{
+        padding: 20px 20px 20px 10px;
+        font-size: 14px;
+        float: right;
+        &-big{
+            width: 100%;
+            justify-content: center;  
+        }  
+    }
+
+    .flex{
+        .col-md-6:first-child{
+            order: 2;
+        }
+        .col-md-6:last-child{
+            order: 1;
+        }
+        .col-md-5:first-child{
+            order: 2;
+        }
+        .col-md-7:last-child{
+            order: 1;
+        }
+    }
+
+    .slide{
+        &-sticky{
+            width: 84%;
+            left: 30px;
+            top: 65px;
+        }
+        &-illustration{
+            height: auto;
+            padding-top: 130px;
+            position: relative;
+            .illustration{
+                height: 250px;
+            }
+            .btn{
+                position: absolute;
+                top: 450px;
+                right: 0;
+            }
+            &.courses{
+                padding-top: 20px;
+                .btn{
+                    top: 380px;
+                }
+                .illustration{
+                    height: 295px;
+                }
+            }
+        }
+    }
+
+    .contacts{
+        // .col-md-5{
+        //     height: 560px;
+        // }
+        .col-md-7{
+            display: none;
+        }
+
+        &-info{
+            p{
+                padding:0;
+            }
+            nav{
+                div{
+                    a{
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form{
+        position: absolute;
+        width: calc( 100% - 30px );
+        min-height: 220px;
+        left: 15px;
+        bottom: 15px;
+        transition: 0.3s ease-in-out;
+        .front {
+            width: 100%;
+            background-size: cover;
+            background-position: top center;
+            height: 50%;
+        }
+        .form_wrap {
+            width: 100%;
+            margin: 0;
+            height: 480px;
+            form {
+                background: #fff;
+                padding: 20px 20px 190px 20px;
+                height: 100%;
+            }
+        }
+    
+        .field {
+            margin-bottom: 10px;
+            & input, textarea {
+                border: solid 2px #e3e8f1;
+                border-radius: 10px;
+                padding: 10px 15px;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 20px;
+                width: 100%;
+                box-sizing: border-box;
+                max-width: 100%;
+                min-width: 100%;
+                max-height: 40px;
+            }
+        }
+    
+        .actions{
+            .btn{
+                margin: auto;
+            }
+        }
+    
+        .field_check {
+            text-align: left;
+            display: flex;
+            margin-bottom: 20px;
+            input {
+                float: left;
+                margin: 0 10px 0 0;
+                width: 13px;
+            }
+            label {
+                font-size: 12px;
+                line-height: 12px;
+                display: block;
+                font-weight: 700;
+                width: 100%;
+                a{
+                    color:black;
+                }
+            }
+        }
+    
+        &:after {
+            width: 100%;
+            height: 238px;
+        }
+    
+        &:hover .form_wrap {
+            height: 480px;
+        }
+        
+    }
+
+    .fp-slidesNav {
+        padding-left: 20px;
+    }
+
+    #fp-nav ul li a span,
+    .fp-slidesNav {
+        ul li a span {
+            background-color: white;
+            height: 12px;
+            width: 12px;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+    }
+
+    #fp-nav ul li:hover a span,
+    .fp-slidesNav ul li:hover a span {
+        height: 12px;
+        width: 12px;
+        margin: 0;
+        background-color: #000;
+    }
+
+    #fp-nav ul li,
+    .fp-slidesNav ul li {
+        height: 13px;
+        width: 14px;
+        margin: 0 10px;
+    }
+
+    #fp-nav ul li a.active span,
+    .fp-slidesNav ul li a.active span,
+    #fp-nav ul li:hover a.active span,
+    .fp-slidesNav ul li:hover a.active span {
+        height: 12px;
+        width: 12px;
+        margin: 0;
+        background-color: #000;
+    }
+
+    .fp-slidesNav.fp-bottom {
+        bottom: 115px;
+    }
+
+    .d-sm-block{
+        display: table;
+    }
+
+}
