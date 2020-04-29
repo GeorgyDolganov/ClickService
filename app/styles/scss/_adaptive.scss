@@ -384,6 +384,23 @@ $breakpoint-desktop: 1300px;
 }
 
 @media (max-width: $breakpoint-tablet) {
+    .flex {
+        .col-lg-6:first-child {
+          order: 2;
+        }
+    
+        .col-lg-6:last-child {
+          order: 1;
+        }
+    
+        .col-lg-5:first-child {
+          order: 2;
+        }
+    
+        .col-lg-7:last-child {
+          order: 1;
+        }
+      }
     header {
         padding: 20px 0;
 

@@ -1300,6 +1300,19 @@ p {
   }
 }
 @media (max-width: 768px) {
+  .flex .col-lg-6:first-child {
+    order: 2;
+  }
+  .flex .col-lg-6:last-child {
+    order: 1;
+  }
+  .flex .col-lg-5:first-child {
+    order: 2;
+  }
+  .flex .col-lg-7:last-child {
+    order: 1;
+  }
+
   header {
     padding: 20px 0;
   }
