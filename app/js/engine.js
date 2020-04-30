@@ -1,3 +1,15 @@
+$('.nav-item').click(function (event) {
+	if (this.checked) {
+		$('#toggle').each(function () {
+			this.checked = true;
+		});
+	} else {
+		$('#toggle').each(function () {
+			this.checked = false;
+		});
+	}
+});
+
 var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',

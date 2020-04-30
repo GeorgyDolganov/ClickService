@@ -475,7 +475,7 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
-    max-width: 56.483333%;
+    max-width: 58.333333%;
   }
 
   .col-lg-8 {
@@ -857,7 +857,6 @@ p {
 }
 .slide-illustration {
   height: 610px;
-  margin: 0;
 }
 .slide-illustration button {
   float: right;
@@ -1021,7 +1020,7 @@ p {
 #toggle:checked ~ .toggle-container .button-toggle:after {
   transform: translateY(50%) rotate(-45deg) scale(1);
 }
-#toggle:checked:focus ~ .toggle-container .button-toggle {
+#toggle:checked ~ .toggle-container .button-toggle {
   box-shadow: 0 0 0 550px #FFD170, inset 0 0 0 20px #FFD170, 0 0 0 8px #FFD170, inset 0 0 0 20px #FFD170;
 }
 #toggle:checked ~ .nav {
@@ -1179,6 +1178,9 @@ p {
   background-color: black;
   transform: translateY(-50%) scaleY(5);
   transition: 0.5s;
+}
+.nav-item:hover {
+  color: #00000000;
 }
 
 @media (min-width: 1300px) {
@@ -1423,8 +1425,15 @@ p {
   .contacts .col-lg-7 {
     display: none;
   }
+  .contacts-info .fp-tableCell {
+    padding: 0 30px;
+  }
   .contacts-info p {
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .contacts-info p + p {
+    padding-top: 0;
   }
   .contacts-info nav div a {
     font-size: 12px;
