@@ -750,6 +750,7 @@
 
 body {
   background-color: #FFD170;
+  transition: 0.6s ease-in-out;
 }
 
 header {
@@ -1021,7 +1022,7 @@ p {
   transform: translateY(50%) rotate(-45deg) scale(1);
 }
 #toggle:checked ~ .toggle-container .button-toggle {
-  box-shadow: 0 0 0 550px #FFD170, inset 0 0 0 20px #FFD170, 0 0 0 8px #FFD170, inset 0 0 0 20px #FFD170;
+  box-shadow: 0 0 0 850px #FFD170, inset 0 0 0 20px #FFD170, 0 0 0 8px #FFD170, inset 0 0 0 20px #FFD170;
 }
 #toggle:checked ~ .nav {
   margin-bottom: 100px;
@@ -1239,7 +1240,7 @@ p {
   }
 
   .illustration {
-    height: 300px;
+    height: 400px;
     margin: auto;
   }
 

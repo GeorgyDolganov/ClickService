@@ -11,8 +11,28 @@ $('.nav-item').click(function (event) {
 });
 
 $(document).ready(function(){
-	$('body').css({'background-color': '#'+$('section:eq(0)').data('color')});
+	$('body').css({'background-color': '#'+$('.section:eq(0)').data('color')});
 });
+
+function update_section(destination) {
+	console.log($('.section:eq('+destination.index+')').data('color')); 
+	$('body').css({'background-color': '#'+$('.section:eq('+destination.index+')').data('color')});
+	$('header').attr('data-slide', $('.section:eq('+destination.index+')').attr('id'));
+	$('.section.init').removeClass('init');
+	setTimeout(function(){
+		$('.section:eq('+destination.index+')').addClass('init');
+	},500);
+}
+
+function update_slide(destination) {
+	console.log($('.slide:eq('+destination.index+')').data('color')); 
+	$('body').css({'background-color': '#'+$('.slide:eq('+destination.index+')').data('color')});
+	$('header').attr('data-slide', $('.slide:eq('+destination.index+')').attr('id'));
+	$('.slide.init').removeClass('init');
+	setTimeout(function(){
+		$('.slide:eq('+destination.index+')').addClass('init');
+	},500);
+}
 
 var myFullpage = new fullpage('#fullpage', {
 	//Navigation
@@ -61,7 +81,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Design
 	controlArrows: false,
 	verticalCentered: true,
-	sectionsColor : ['#FFD271', '#51A7FF', '#FB6172', '#FB6172'],
+	//sectionsColor : ['#FFD271', '#51A7FF', '#FB6172', '#FB6172'],
 	fixedElements: '#head',
 	responsiveWidth: 0,
 	responsiveHeight: 0,
@@ -78,12 +98,10 @@ var myFullpage = new fullpage('#fullpage', {
 	lazyLoading: true,
 
 	//events
-	onSlideLeave: function (anchor_link, index, current_index, direction, next_index){
-		//update_screen(next_index);
-		console.log('anchor-link: ' + anchor_link, index, current_index, direction, next_index);
+	onSlideLeave: function (section, origin, destination, direction){
+		update_slide(destination);
 	},
-	onLeave: function(current_index, next_index, direction){
-		//update_screen(next_index-1);
-		console.log(current_index, direction, next_index); 
+	onLeave: function(origin, destination, direction){
+		update_section(destination);
 	}
 });
