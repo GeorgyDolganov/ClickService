@@ -576,13 +576,13 @@ $breakpoint-desktop: 1300px;
             width: 100%;
             background-size: cover;
             background-position: top center;
-            height: 50%;
+            height: 260px;
         }
 
         .form_wrap {
             width: 100%;
             margin: 0;
-            height: 480px;
+            height: 280px;
 
             form {
                 background: #fff;
@@ -599,7 +599,7 @@ $breakpoint-desktop: 1300px;
 
         &:after {
             width: 100%;
-            height: 50%;
+            height: 260px;
         }
 
         &:hover .form_wrap {

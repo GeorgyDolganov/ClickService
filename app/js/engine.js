@@ -19,9 +19,6 @@ function update_section(destination) {
 	$('body').css({'background-color': '#'+$('.section:eq('+destination.index+')').data('color')});
 	$('header').attr('data-slide', $('.section:eq('+destination.index+')').attr('id'));
 	$('.section.init').removeClass('init');
-	setTimeout(function(){
-		$('.section:eq('+destination.index+')').addClass('init');
-	},500);
 }
 
 function update_slide(destination) {
@@ -30,8 +27,8 @@ function update_slide(destination) {
 	$('header').attr('data-slide', $('.slide:eq('+destination.index+')').attr('id'));
 	$('.slide.init').removeClass('init');
 	setTimeout(function(){
-		$('.slide:eq('+destination.index+')').addClass('init');
-	},500);
+		fullpage_api.moveSlideRight();
+	},2500);
 }
 
 var myFullpage = new fullpage('#fullpage', {
@@ -58,7 +55,7 @@ var myFullpage = new fullpage('#fullpage', {
 	loopBottom: false,
 	loopTop: false,
 	loopHorizontal: true,
-	continuousVertical: false,
+	continuousVertical: true,
 	continuousHorizontal: false,
 	scrollHorizontally: true,
 	interlockedSlides: false,
