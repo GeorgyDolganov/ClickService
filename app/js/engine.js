@@ -10,6 +10,10 @@ $('.nav-item').click(function (event) {
 	}
 });
 
+$(document).ready(function(){
+	$('body').css({'background-color': '#'+$('section:eq(0)').data('color')});
+});
+
 var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
@@ -74,12 +78,12 @@ var myFullpage = new fullpage('#fullpage', {
 	lazyLoading: true,
 
 	//events
-	onLeave: function(origin, destination, direction){},
-	afterLoad: function(origin, destination, direction){},
-	afterRender: function(){},
-	afterResize: function(width, height){},
-	afterReBuild: function(){},
-	afterResponsive: function(isResponsive){},
-	afterSlideLoad: function(section, origin, destination, direction){},
-	onSlideLeave: function(section, origin, destination, direction){}
+	onSlideLeave: function (anchor_link, index, current_index, direction, next_index){
+		//update_screen(next_index);
+		console.log('anchor-link: ' + anchor_link, index, current_index, direction, next_index);
+	},
+	onLeave: function(current_index, next_index, direction){
+		//update_screen(next_index-1);
+		console.log(current_index, direction, next_index); 
+	}
 });

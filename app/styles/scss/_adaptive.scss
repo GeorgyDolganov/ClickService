@@ -27,7 +27,7 @@ $breakpoint-desktop: 1300px;
 
     &:checked {
         &~.toggle-container .button-toggle {
-            box-shadow: 0 0 0 550px $yellow, inset 0 0 0 20px $yellow, 0 0 0 8px $yellow, inset 0 0 0 20px $yellow
+            box-shadow: 0 0 0 850px $yellow, inset 0 0 0 20px $yellow, 0 0 0 8px $yellow, inset 0 0 0 20px $yellow
         }
 
         &~ {
