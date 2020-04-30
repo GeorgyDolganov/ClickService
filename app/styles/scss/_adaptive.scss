@@ -742,6 +742,18 @@ $breakpoint-desktop: 1300px;
 
 }
 
+@media (max-height: 750px) {
+    .fp-slidesNav.fp-bottom {
+        bottom: 50px;
+    }
+}
+
+@media (max-height: 670px) {
+    .fp-slidesNav.fp-bottom {
+        bottom: 100px;
+    }
+}
+
 @media (max-height: 550px) {
     .slide-illustration {
         padding-top: 70px;
