@@ -686,13 +686,13 @@ $breakpoint-desktop: 1300px;
 
     .form {
         .front {
-            height: 30%;
+            height: 160px;
         }
 
         .form_wrap {
             width: 100%;
             margin: 0;
-            height: 370px;
+            height: 250px;
         }
 
         .actions .btn {
@@ -701,7 +701,11 @@ $breakpoint-desktop: 1300px;
 
         &:after {
             width: 100%;
-            height: 30%;
+            height: 180px;
+        }
+
+        &:hover .form_wrap {
+            height: 400px;
         }
     }
 
@@ -730,6 +734,16 @@ $breakpoint-desktop: 1300px;
         height: 160px;
     }
 
+    .slide-illustration {
+        padding-top: 38px;
+        .illustration {
+            height: 180px;
+        }
+        .btn {
+            top: 285px;
+        }
+    }
+
     .btn {
         padding: 10px;
     }
@@ -751,6 +765,12 @@ $breakpoint-desktop: 1300px;
 @media (max-height: 670px) {
     .fp-slidesNav.fp-bottom {
         bottom: 100px;
+    }
+}
+
+@media (max-height: 570px) {
+    .fp-slidesNav.fp-bottom {
+        bottom: 50px;
     }
 }
 
