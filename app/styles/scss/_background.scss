@@ -9,12 +9,12 @@
 }
 
 
-$shadows-circle-sm: multiple-box-shadow(5);
-$shadows-circle-md: multiple-box-shadow(10);
-$shadows-circle-lg: multiple-box-shadow(15);
-$shadows-square-sm: multiple-box-shadow(5);
-$shadows-square-md: multiple-box-shadow(10);
-$shadows-square-lg: multiple-box-shadow(15);
+$shadows-circle-sm: multiple-box-shadow(random(15));
+$shadows-circle-md: multiple-box-shadow(random(15));
+$shadows-circle-lg: multiple-box-shadow(random(15));
+$shadows-square-sm: multiple-box-shadow(random(15));
+$shadows-square-md: multiple-box-shadow(random(15));
+$shadows-square-lg: multiple-box-shadow(random(15));
 
 $size-circle-sm: random(100) + px;
 $size-circle-md: random(200) + px;
@@ -177,10 +177,12 @@ $rotate-lg: random(360) - random(360) + deg;
 @keyframes animStar{
   from{
     transform: translateY(0px);
+    transform: rotate(0deg);
   }
     
   to{
     transform: translateY(-2000px);
+    transform: rotate(-90deg);
   }	
 }
   

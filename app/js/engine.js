@@ -19,6 +19,9 @@ function update_section(destination) {
 	$('body').css({'background-color': '#'+$('.section:eq('+destination.index+')').data('color')});
 	$('header').attr('data-slide', $('.section:eq('+destination.index+')').attr('id'));
 	$('.section.init').removeClass('init');
+	setTimeout(function(){
+		fullpage_api.moveSlideRight();
+	},10000);
 }
 
 function update_slide(destination) {
@@ -28,7 +31,35 @@ function update_slide(destination) {
 	$('.slide.init').removeClass('init');
 	setTimeout(function(){
 		fullpage_api.moveSlideRight();
-	},2500);
+	},10000);
+}
+
+$('body').on('submit', '#send_message form', function(e){ 
+	e.preventDefault();
+	$('.popup').removeClass('active');
+	$('#alert').addClass('active');
+});
+
+$('.popup').on('click', '.popup-close, .popup-overlay', function(){
+	$(this).closest('.popup').removeClass('active');
+});
+
+$('.send_website').click(function(){ 
+	$('.popup').removeClass('active');
+	$('#order_webinar').addClass('active');
+});
+
+$('body').on('submit', '#order_webinar form', function(e){ 
+	e.preventDefault();
+	let f = $(this);
+	send_message_from_landing(f);
+});
+
+function send_message_from_landing(f) {
+	$('.popup').removeClass('active');
+	$('#alert').addClass('active');
+	$('#alert .popup_caption').text('Готово');
+	$('#alert .popup_message').text(d.message);
 }
 
 var myFullpage = new fullpage('#fullpage', {
@@ -55,8 +86,8 @@ var myFullpage = new fullpage('#fullpage', {
 	loopBottom: false,
 	loopTop: false,
 	loopHorizontal: true,
-	continuousVertical: true,
-	continuousHorizontal: false,
+	continuousVertical: false,
+	continuousHorizontal: true,
 	scrollHorizontally: true,
 	interlockedSlides: false,
 	dragAndMove: true,

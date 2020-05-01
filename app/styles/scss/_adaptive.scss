@@ -657,6 +657,25 @@ $breakpoint-desktop: 1300px;
         display: table;
     }
 
+    .popup {
+        &.active{
+            .popup-content{
+                transform: translateX(-9.5%) translateY(-50%);
+                opacity: 1;
+            }
+            .popup-overlay {
+                opacity: 0.5;
+            }
+        }
+    
+        &-content{
+            left: 16%;
+            .popup-message {
+                font-size: 12px;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 350px) {
@@ -692,7 +711,7 @@ $breakpoint-desktop: 1300px;
         .form_wrap {
             width: 100%;
             margin: 0;
-            height: 250px;
+            height: 190px;
         }
 
         .actions .btn {
@@ -752,7 +771,7 @@ $breakpoint-desktop: 1300px;
         padding: 5px !important;
         font-size: 10px !important;
     }
-
+    
 
 }
 

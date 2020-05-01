@@ -33,6 +33,10 @@
         top: 2px;
     }
 
+    &:focus{
+        outline: none;
+    }
+
     &-purple {
         color: white;
         background-color: $purple;
