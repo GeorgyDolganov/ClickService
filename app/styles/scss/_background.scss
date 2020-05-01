@@ -1,0 +1,186 @@
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFFFFF';
+
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFFFFF';
+  }
+
+  @return unquote($value);
+}
+
+
+$shadows-circle-sm: multiple-box-shadow(5);
+$shadows-circle-md: multiple-box-shadow(10);
+$shadows-circle-lg: multiple-box-shadow(15);
+$shadows-square-sm: multiple-box-shadow(5);
+$shadows-square-md: multiple-box-shadow(10);
+$shadows-square-lg: multiple-box-shadow(15);
+
+$size-circle-sm: random(100) + px;
+$size-circle-md: random(200) + px;
+$size-circle-lg: random(300) + px;
+$size-square-sm: random(100) + px;
+$size-square-md: random(200) + px;
+$size-square-lg: random(300) + px;
+
+$rotate-sm: random(360) - random(360) + deg;
+$rotate-md: random(360) - random(360) + deg;
+$rotate-lg: random(360) - random(360) + deg;
+
+#particle {
+  opacity: 20%;
+  &-circle{
+    &-sm{
+      position: absolute;
+      width: $size-circle-sm;
+      height: $size-circle-sm;
+      background: transparent;
+      box-shadow: $shadows-circle-sm;
+      animation: animStar 150s linear infinite;
+      border-radius: 50%;
+      &:after{
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: $size-circle-sm;
+        height: $size-circle-sm;
+        background: transparent;
+        box-shadow: $shadows-circle-sm;
+        border-radius: 50%;
+      }
+    }
+    &-md{
+      position: absolute;
+      width: $size-circle-md;
+      height: $size-circle-md;
+      background: transparent;
+      box-shadow: $shadows-circle-md;
+      animation: animStar 300s linear infinite;
+      border-radius: 50%;
+      &:after{
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: $size-circle-md;
+        height: $size-circle-md;
+        background: transparent;
+        box-shadow: $shadows-circle-md;
+        border-radius: 50%;
+      }
+    }
+    &-lg{
+      position: absolute;
+      width: $size-circle-lg;
+      height: $size-circle-lg;
+      background: transparent;
+      box-shadow: $shadows-circle-lg;
+      animation: animStar 500s linear infinite;
+      border-radius: 50%;
+      &:after{
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: $size-circle-lg;
+        height: $size-circle-lg;
+        background: transparent;
+        box-shadow: $shadows-circle-lg;
+        border-radius: 50%;
+      }
+    }
+  }
+  // &-outline{
+  //   &-sm{
+  //     position: absolute;
+  //     width: $size-md;
+  //     height: $size-md;
+  //     background: transparent;
+  //     box-shadow: $shadows-medium;
+  //     animation: animStar 100s linear infinite;
+  //     &:after {
+  //       content: " ";
+  //       position: absolute;
+  //       top: 2000px;
+  //       width: $size-md;
+  //       height: $size-md;
+  //       background: transparent;
+  //       box-shadow: $shadows-medium;
+  //     }
+  //   }
+  // }
+  &-square{
+    &-sm{
+      position: absolute;
+      width: $size-square-sm;
+      height: $size-square-sm;
+      background: transparent;
+      box-shadow: $shadows-square-sm;
+      animation: animStar 150s linear infinite;
+      border-radius: 10px;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: $size-square-sm;
+        height: $size-square-sm;
+        transform: rotate($rotate-sm);
+        background: transparent;
+        box-shadow: $shadows-square-sm;
+        border-radius: 10px;
+      }
+    }
+    &-md{
+      position: absolute;
+      width: $size-square-md;
+      height: $size-square-md;
+      background: transparent;
+      box-shadow: $shadows-square-md;
+      animation: animStar 150s linear infinite;
+      border-radius: 10px;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: $size-square-md;
+        height: $size-square-md;
+        transform: rotate($rotate-md);
+        background: transparent;
+        box-shadow: $shadows-square-md;
+        border-radius: 10px;
+      }
+    }
+    &-lg{
+      position: absolute;
+      width: $size-square-lg;
+      height: $size-square-lg;
+      background: transparent;
+      box-shadow: $shadows-square-lg;
+      animation: animStar 300s linear infinite;
+      border-radius: 10px;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: $size-square-lg;
+        height: $size-square-lg;
+        transform: rotate($rotate-lg);
+        background: transparent;
+        box-shadow: $shadows-square-lg;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@keyframes animStar{
+  from{
+    transform: translateY(0px);
+  }
+    
+  to{
+    transform: translateY(-2000px);
+  }	
+}
+  
