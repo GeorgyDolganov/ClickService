@@ -28,7 +28,8 @@ $rotate-md: random(360) - random(360) + deg;
 $rotate-lg: random(360) - random(360) + deg;
 
 #particle {
-  opacity: 20%;
+  opacity: 0.2;
+  position: absolute;
   &-circle{
     &-sm{
       position: absolute;

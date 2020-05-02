@@ -387,6 +387,10 @@ $breakpoint-desktop: 1300px;
 }
 
 @media (max-width: $breakpoint-tablet) {
+    #particle{
+        overflow: hidden;
+    }
+
     .flex {
         .col-lg-6:first-child {
           order: 2;
