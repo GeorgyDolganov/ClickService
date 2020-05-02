@@ -21,17 +21,17 @@ function update_section(destination) {
 	$('.section.init').removeClass('init');
 	setTimeout(function(){
 		fullpage_api.moveSlideRight();
-	},10000);
+	},2500);
 }
 
 function update_slide(destination) {
 	console.log($('.slide:eq('+destination.index+')').data('color')); 
 	$('body').css({'background-color': '#'+$('.slide:eq('+destination.index+')').data('color')});
 	$('header').attr('data-slide', $('.slide:eq('+destination.index+')').attr('id'));
-	$('.slide.init').removeClass('init');
-	setTimeout(function(){
-		fullpage_api.moveSlideRight();
-	},10000);
+	// $('.slide.init').removeClass('init');
+	// setTimeout(function(){
+	// 	fullpage_api.moveSlideRight();
+	// },10000);
 }
 
 $('body').on('submit', '#send_message form', function(e){ 
@@ -107,7 +107,7 @@ var myFullpage = new fullpage('#fullpage', {
 	recordHistory: true,
 
 	//Design
-	controlArrows: false,
+	controlArrows: true,
 	verticalCentered: true,
 	//sectionsColor : ['#FFD271', '#51A7FF', '#FB6172', '#FB6172'],
 	fixedElements: '#head',
