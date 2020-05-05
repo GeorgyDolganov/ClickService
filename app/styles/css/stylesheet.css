@@ -752,10 +752,10 @@
 }
 #particle-circle-sm {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 45px;
+  height: 45px;
   background: transparent;
-  box-shadow: 1713px 465px #FFFFFF , 1165px 227px #FFFFFF , 1352px 1417px #FFFFFF , 820px 1499px #FFFFFF , 1018px 664px #FFFFFF , 623px 1050px #FFFFFF , 1806px 595px #FFFFFF , 499px 906px #FFFFFF , 429px 165px #FFFFFF , 1443px 615px #FFFFFF;
+  box-shadow: 1886px 1527px #FFFFFF , 1552px 488px #FFFFFF , 1745px 1548px #FFFFFF , 514px 570px #FFFFFF , 140px 386px #FFFFFF;
   animation: animStar 150s linear infinite;
   border-radius: 50%;
 }
@@ -763,18 +763,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 70px;
-  height: 70px;
+  width: 45px;
+  height: 45px;
   background: transparent;
-  box-shadow: 1713px 465px #FFFFFF , 1165px 227px #FFFFFF , 1352px 1417px #FFFFFF , 820px 1499px #FFFFFF , 1018px 664px #FFFFFF , 623px 1050px #FFFFFF , 1806px 595px #FFFFFF , 499px 906px #FFFFFF , 429px 165px #FFFFFF , 1443px 615px #FFFFFF;
+  box-shadow: 1886px 1527px #FFFFFF , 1552px 488px #FFFFFF , 1745px 1548px #FFFFFF , 514px 570px #FFFFFF , 140px 386px #FFFFFF;
   border-radius: 50%;
 }
 #particle-circle-md {
   position: absolute;
-  width: 121px;
-  height: 121px;
+  width: 153px;
+  height: 153px;
   background: transparent;
-  box-shadow: 595px 1706px #FFFFFF , 1448px 84px #FFFFFF , 1388px 1675px #FFFFFF , 993px 1191px #FFFFFF , 1523px 308px #FFFFFF;
+  box-shadow: 1469px 15px #FFFFFF , 1240px 922px #FFFFFF , 1105px 1601px #FFFFFF;
   animation: animStar 300s linear infinite;
   border-radius: 50%;
 }
@@ -782,18 +782,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 121px;
-  height: 121px;
+  width: 153px;
+  height: 153px;
   background: transparent;
-  box-shadow: 595px 1706px #FFFFFF , 1448px 84px #FFFFFF , 1388px 1675px #FFFFFF , 993px 1191px #FFFFFF , 1523px 308px #FFFFFF;
+  box-shadow: 1469px 15px #FFFFFF , 1240px 922px #FFFFFF , 1105px 1601px #FFFFFF;
   border-radius: 50%;
 }
 #particle-circle-lg {
   position: absolute;
-  width: 217px;
-  height: 217px;
+  width: 140px;
+  height: 140px;
   background: transparent;
-  box-shadow: 1983px 777px #FFFFFF , 1921px 78px #FFFFFF , 1320px 1330px #FFFFFF;
+  box-shadow: 772px 1038px #FFFFFF , 1622px 39px #FFFFFF;
   animation: animStar 500s linear infinite;
   border-radius: 50%;
 }
@@ -801,18 +801,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 217px;
-  height: 217px;
+  width: 140px;
+  height: 140px;
   background: transparent;
-  box-shadow: 1983px 777px #FFFFFF , 1921px 78px #FFFFFF , 1320px 1330px #FFFFFF;
+  box-shadow: 772px 1038px #FFFFFF , 1622px 39px #FFFFFF;
   border-radius: 50%;
 }
 #particle-square-sm {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background: transparent;
-  box-shadow: 890px 1416px #FFFFFF , 1552px 4px #FFFFFF , 1112px 1923px #FFFFFF , 1931px 1763px #FFFFFF , 1086px 1466px #FFFFFF , 143px 138px #FFFFFF , 891px 1621px #FFFFFF , 994px 748px #FFFFFF , 795px 384px #FFFFFF , 1460px 494px #FFFFFF , 1146px 1360px #FFFFFF , 698px 419px #FFFFFF , 4px 387px #FFFFFF , 1100px 1581px #FFFFFF;
+  box-shadow: 1520px 1617px #FFFFFF , 216px 1038px #FFFFFF , 1009px 611px #FFFFFF , 244px 1666px #FFFFFF , 156px 1672px #FFFFFF , 12px 593px #FFFFFF , 1018px 1694px #FFFFFF;
   animation: animStar 150s linear infinite;
   border-radius: 10px;
 }
@@ -820,19 +820,19 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 30px;
-  height: 30px;
-  transform: rotate(-170deg);
+  width: 35px;
+  height: 35px;
+  transform: rotate(-95deg);
   background: transparent;
-  box-shadow: 890px 1416px #FFFFFF , 1552px 4px #FFFFFF , 1112px 1923px #FFFFFF , 1931px 1763px #FFFFFF , 1086px 1466px #FFFFFF , 143px 138px #FFFFFF , 891px 1621px #FFFFFF , 994px 748px #FFFFFF , 795px 384px #FFFFFF , 1460px 494px #FFFFFF , 1146px 1360px #FFFFFF , 698px 419px #FFFFFF , 4px 387px #FFFFFF , 1100px 1581px #FFFFFF;
+  box-shadow: 1520px 1617px #FFFFFF , 216px 1038px #FFFFFF , 1009px 611px #FFFFFF , 244px 1666px #FFFFFF , 156px 1672px #FFFFFF , 12px 593px #FFFFFF , 1018px 1694px #FFFFFF;
   border-radius: 10px;
 }
 #particle-square-md {
   position: absolute;
-  width: 88px;
-  height: 88px;
+  width: 37px;
+  height: 37px;
   background: transparent;
-  box-shadow: 546px 156px #FFFFFF , 202px 1759px #FFFFFF , 267px 597px #FFFFFF , 401px 368px #FFFFFF , 54px 1132px #FFFFFF , 805px 1216px #FFFFFF , 967px 1704px #FFFFFF , 73px 567px #FFFFFF;
+  box-shadow: 533px 677px #FFFFFF , 395px 864px #FFFFFF , 696px 1343px #FFFFFF , 1213px 1663px #FFFFFF , 1664px 1499px #FFFFFF , 728px 100px #FFFFFF , 1421px 652px #FFFFFF;
   animation: animStar 150s linear infinite;
   border-radius: 10px;
 }
@@ -840,19 +840,19 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 88px;
-  height: 88px;
-  transform: rotate(-263deg);
+  width: 37px;
+  height: 37px;
+  transform: rotate(60deg);
   background: transparent;
-  box-shadow: 546px 156px #FFFFFF , 202px 1759px #FFFFFF , 267px 597px #FFFFFF , 401px 368px #FFFFFF , 54px 1132px #FFFFFF , 805px 1216px #FFFFFF , 967px 1704px #FFFFFF , 73px 567px #FFFFFF;
+  box-shadow: 533px 677px #FFFFFF , 395px 864px #FFFFFF , 696px 1343px #FFFFFF , 1213px 1663px #FFFFFF , 1664px 1499px #FFFFFF , 728px 100px #FFFFFF , 1421px 652px #FFFFFF;
   border-radius: 10px;
 }
 #particle-square-lg {
   position: absolute;
-  width: 139px;
-  height: 139px;
+  width: 135px;
+  height: 135px;
   background: transparent;
-  box-shadow: 1066px 295px #FFFFFF , 263px 1878px #FFFFFF , 1110px 279px #FFFFFF , 1141px 1661px #FFFFFF;
+  box-shadow: 260px 676px #FFFFFF , 751px 1592px #FFFFFF , 1518px 1324px #FFFFFF , 1189px 1406px #FFFFFF , 755px 1988px #FFFFFF , 1476px 1430px #FFFFFF , 16px 247px #FFFFFF , 915px 1211px #FFFFFF , 412px 644px #FFFFFF , 1500px 1353px #FFFFFF , 1363px 1891px #FFFFFF;
   animation: animStar 300s linear infinite;
   border-radius: 10px;
 }
@@ -860,11 +860,11 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 139px;
-  height: 139px;
-  transform: rotate(86deg);
+  width: 135px;
+  height: 135px;
+  transform: rotate(-82deg);
   background: transparent;
-  box-shadow: 1066px 295px #FFFFFF , 263px 1878px #FFFFFF , 1110px 279px #FFFFFF , 1141px 1661px #FFFFFF;
+  box-shadow: 260px 676px #FFFFFF , 751px 1592px #FFFFFF , 1518px 1324px #FFFFFF , 1189px 1406px #FFFFFF , 755px 1988px #FFFFFF , 1476px 1430px #FFFFFF , 16px 247px #FFFFFF , 915px 1211px #FFFFFF , 412px 644px #FFFFFF , 1500px 1353px #FFFFFF , 1363px 1891px #FFFFFF;
   border-radius: 10px;
 }
 
@@ -1944,7 +1944,7 @@ form .field {
     font-size: 14px;
   }
 
-  p {
+  .contacts p {
     font-size: 12px;
     padding: 0px 0;
   }
