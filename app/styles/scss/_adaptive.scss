@@ -389,6 +389,7 @@ $breakpoint-desktop: 1300px;
 @media (max-width: $breakpoint-tablet) {
     #particle{
         overflow: hidden;
+        display:none;
     }
 
     .flex {
@@ -787,6 +788,41 @@ $breakpoint-desktop: 1300px;
         font-size: 10px !important;
     }
     
+
+}
+
+@media (max-height: 760px) and (min-width: $breakpoint-desktop){
+
+    h3 {
+        font-size: 14px;
+    }
+    
+    p {
+        font-size: 12px;
+        padding: 0px 0;
+    }
+
+    .illustration{
+        height: 475px;
+    }
+
+    .slide{
+        .illustration{
+           margin-top: 90px;
+           height: 400px;
+           margin-bottom: 40px; 
+        }
+    }
+
+    .price{
+        &-range{
+            margin-top: 45px;
+        }
+    }
+
+    .fp-slidesNav.fp-bottom {
+        bottom: 170px;
+    }
 
 }
 
