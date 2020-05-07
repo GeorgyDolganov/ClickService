@@ -26,7 +26,7 @@
     <![endif]-->
     <header>
         <div class="brand">
-            <div class="logo"></div>
+            <div class="logo" onclick="window.location='https://school-clickchat.me/';"></div>
             <button class="btn-header send_website">Записаться на вебинар</button>
         </div>
         <nav id="menu">
@@ -81,15 +81,7 @@
         <div id='particle-square-md'></div>
         <div id='particle-square-lg'></div>
     </div>
-    <div>
-        <div id="alert" class="popup">
-            <div class="popup-content">
-                <div class="popup-caption">Готово</div>
-                <div class="popup-close">x</div>
-                <div class="popup-message">Сообщение отправлено. С Вами свяжется наш менеджер. Спасибо!</div>
-            </div>
-            <div class="popup-overlay"></div>
-        </div>
+    <div id="popups">
         <div id="order_webinar" class="popup"> 
             <div class="popup-content">
                 <div class="popup-caption">Записаться <br>на вебинар</div> 
@@ -115,6 +107,39 @@
             </div>
             <div class="popup-overlay"></div>
         </div>
+        <div id="order" class="popup"> 
+            <div class="popup-content">
+                <div class="popup-caption">Заказать</div> 
+                <div class="popup-close"><i class="fal fa-times"></i></div>
+                <form id="send_message">
+                    <input type="hidden" name="type" value="landing_order_webinar">
+                    <div class="field">
+                        <label>Ваше имя <span class="colored red">*</span></label>
+                        <input type="text" name="name" placeholder="ФИО" autocomplete="off" required="">
+                    </div>
+                    <div class="field">
+                        <label>Email <span class="colored red">*</span></label>
+                        <input type="email" name="email" placeholder="" autocomplete="off" required="">
+                    </div>
+                    <div class="field_check">
+                        <input type="checkbox" name="agree" id="field-order-agree" required="">
+                        <label for="field-order-agree">Я согласен(а) c условиями <a href="docs/privacy-policy.pdf" target="_blank">политики обработки персональных данных</a>, <a href="docs/user-agreement.pdf" target="_blank">пользовательского соглашения</a> и <a href="docs/public-offer.pdf" target="_blank">публичной оферты</a></label>
+                    </div>
+                    <div class="actions">
+                        <button class="btn" type="submit" data-action="order">Заказать</button>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-overlay"></div>
+        </div>
+        <div id="whatsapp" class="popup"> 
+            <div class="popup-content">
+                <div class="popup-caption">Отсканируй QR, чтобы написать в whatsapp</div> 
+                <div class="popup-close"><i class="fal fa-times"></i></div>
+                <div class="qr" style="background-image: url(../app/assets/qrWhatsApp.svg);"></div>
+            </div>
+            <div class="popup-overlay"></div>
+        </div>       
     </div>
     
     <div id="fullpage">
@@ -128,7 +153,7 @@
                         <div class="price">49000<span>руб.</span></div>
                     </div>
                     <div class="col-5 col-sm-6 col-lg-12">
-                        <button class="btn btn-big btn-purple send_website" type="submit">
+                        <button class="btn btn-big btn-blue costil order" type="submit">
                             <span class="emoji"><i class="twa twa-thinking-face"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -147,7 +172,13 @@
                         Полностью упакуем Ваши компетенции в онлайн курс или школу, 
                         возьмем на себя всю организацию и затраты! 
                     </p>
-                    <button class="btn btn-big btn-red">
+                    <button class="btn btn-big btn-purple d-sm-none d-md-flex" id="whatsapp-btn">
+                        <span class="emoji"><i class="twa twa-winking-face-with-tongue"></i></span>
+                        <span class="text">Написать в WhatsUp</span>
+                    </button>
+                    <button class="btn btn-big btn-purple d-sm-flex d-md-none" onclick="
+                            window.location.replace(`whatsapp://send?phone=79169686598&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D1%83%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2?%0A&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D1%83%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2?%0A`);
+                        ">
                         <span class="emoji"><i class="twa twa-winking-face-with-tongue"></i></span>
                         <span class="text">Написать в WhatsUp</span>
                     </button>
@@ -171,7 +202,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/3.svg');"></div>
-                        <button class="btn btn-purple send_website">
+                        <button class="btn btn-purple order">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -189,7 +220,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/4.svg');"></div>
-                        <button class="btn btn-red send_website">
+                        <button class="btn btn-cyan order">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -207,7 +238,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/5.svg');"></div>
-                        <button class="btn btn-purple send_website">
+                        <button class="btn btn-purple order">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -225,7 +256,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/6.svg');"></div>
-                        <button class="btn btn-blue send_website">
+                        <button class="btn btn-blue order">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -243,7 +274,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/7.svg');"></div>
-                        <button class="btn btn-red send_website">
+                        <button class="btn btn-cyan order">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -260,7 +291,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration courses">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/8.svg');"></div>
-                        <button class="btn btn-purple">
+                        <button onclick="window.location='https://school-clickchat.me/';" class="btn btn-purple">
                             <span class="emoji"><i class="twa twa-victory-hand"></i></span>
                             <span class="text">Перейти</span>
                         </button>
@@ -274,7 +305,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration courses">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/9.svg');"></div>
-                        <button class="btn btn-red">
+                        <button onclick="window.location='https://masks-clickchat.me';" class="btn btn-red">
                             <span class="emoji"><i class="twa twa twa-victory-hand"></i></span>
                             <span class="text">Перейти</span>
                         </button>
@@ -288,7 +319,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration courses">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/10.svg');"></div>
-                        <button class="btn btn-purple">
+                        <button onclick="window.location='https://course-clickchat.me/';" class="btn btn-purple">
                             <span class="emoji"><i class="twa twa twa-victory-hand"></i></span>
                             <span class="text">Перейти</span>
                         </button>

@@ -231,8 +231,16 @@ $breakpoint-desktop: 1300px;
         bottom: 80px;
     }
 
-    .d-sm-block {
+    .d-md-none {
         display: none !important;
+    }
+
+    .d-md-block{
+        display: block !important; 
+    }
+
+    .d-md-flex{
+        display: block !important; 
     }
 
     .mobile {
@@ -658,8 +666,20 @@ $breakpoint-desktop: 1300px;
         bottom: 100px;
     }
 
+    .d-sm-table {
+        display: table!important;
+    }
+
     .d-sm-block {
-        display: table;
+        display: block!important;
+    }
+
+    .d-sm-flex {
+        display: flex!important;
+    }
+
+    .d-sm-none {
+        display: none!important;
     }
 
     .popup {
@@ -814,6 +834,27 @@ $breakpoint-desktop: 1300px;
         }
     }
 
+    .form{
+        .form_wrap{
+                height: 200px;
+        }
+        &:after{
+            height: 216.22px;
+        }
+        .front{
+            height: 208.21px;
+        }
+        &:hover{
+            .form_wrap {
+                height: 407.96px;
+            }
+        }
+        .actions .btn {
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+
     .price{
         &-range{
             margin-top: 45px;
@@ -822,6 +863,11 @@ $breakpoint-desktop: 1300px;
 
     .fp-slidesNav.fp-bottom {
         bottom: 170px;
+    }
+    
+    .costil{
+        /*Знаю что не лучшее решение(время поджимает), но если ты это читаешь, то у тебя есть шанс сделать код лучше*/
+        margin-top: 20px;
     }
 
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Raleway";
   src: url("../../assets/fonts/Raleway-Bold.eot");
@@ -752,130 +753,128 @@
 }
 #particle-circle-sm {
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 2px;
+  height: 2px;
   background: transparent;
-  box-shadow: 1886px 1527px #FFFFFF , 1552px 488px #FFFFFF , 1745px 1548px #FFFFFF , 514px 570px #FFFFFF , 140px 386px #FFFFFF;
-  animation: animStar 150s linear infinite;
+  box-shadow: 537px 121px #FFFFFF , 1839px 587px #FFFFFF , 1245px 154px #FFFFFF , 1253px 1328px #FFFFFF , 1593px 13px #FFFFFF , 977px 940px #FFFFFF , 990px 350px #FFFFFF , 920px 1412px #FFFFFF , 881px 358px #FFFFFF , 1316px 1380px #FFFFFF , 1658px 1200px #FFFFFF , 1760px 1790px #FFFFFF;
+  animation: animStar 110s linear infinite;
   border-radius: 50%;
 }
 #particle-circle-sm:after {
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 45px;
-  height: 45px;
+  width: 2px;
+  height: 2px;
   background: transparent;
-  box-shadow: 1886px 1527px #FFFFFF , 1552px 488px #FFFFFF , 1745px 1548px #FFFFFF , 514px 570px #FFFFFF , 140px 386px #FFFFFF;
+  box-shadow: 537px 121px #FFFFFF , 1839px 587px #FFFFFF , 1245px 154px #FFFFFF , 1253px 1328px #FFFFFF , 1593px 13px #FFFFFF , 977px 940px #FFFFFF , 990px 350px #FFFFFF , 920px 1412px #FFFFFF , 881px 358px #FFFFFF , 1316px 1380px #FFFFFF , 1658px 1200px #FFFFFF , 1760px 1790px #FFFFFF;
   border-radius: 50%;
 }
 #particle-circle-md {
   position: absolute;
-  width: 153px;
-  height: 153px;
+  width: 152px;
+  height: 152px;
   background: transparent;
-  box-shadow: 1469px 15px #FFFFFF , 1240px 922px #FFFFFF , 1105px 1601px #FFFFFF;
-  animation: animStar 300s linear infinite;
+  box-shadow: 654px 378px #FFFFFF , 1871px 1673px #FFFFFF , 1146px 752px #FFFFFF , 1843px 1785px #FFFFFF , 704px 976px #FFFFFF;
+  animation: animStar 25s linear infinite;
   border-radius: 50%;
 }
 #particle-circle-md:after {
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 153px;
-  height: 153px;
+  width: 152px;
+  height: 152px;
   background: transparent;
-  box-shadow: 1469px 15px #FFFFFF , 1240px 922px #FFFFFF , 1105px 1601px #FFFFFF;
+  box-shadow: 654px 378px #FFFFFF , 1871px 1673px #FFFFFF , 1146px 752px #FFFFFF , 1843px 1785px #FFFFFF , 704px 976px #FFFFFF;
   border-radius: 50%;
 }
 #particle-circle-lg {
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: 114px;
+  height: 114px;
   background: transparent;
-  box-shadow: 772px 1038px #FFFFFF , 1622px 39px #FFFFFF;
-  animation: animStar 500s linear infinite;
+  box-shadow: 255px 136px #FFFFFF , 198px 1131px #FFFFFF , 340px 475px #FFFFFF , 335px 1465px #FFFFFF;
+  animation: animStar 150s linear infinite;
   border-radius: 50%;
 }
 #particle-circle-lg:after {
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 140px;
-  height: 140px;
+  width: 114px;
+  height: 114px;
   background: transparent;
-  box-shadow: 772px 1038px #FFFFFF , 1622px 39px #FFFFFF;
+  box-shadow: 255px 136px #FFFFFF , 198px 1131px #FFFFFF , 340px 475px #FFFFFF , 335px 1465px #FFFFFF;
   border-radius: 50%;
 }
 #particle-square-sm {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 12px;
+  height: 12px;
   background: transparent;
-  box-shadow: 1520px 1617px #FFFFFF , 216px 1038px #FFFFFF , 1009px 611px #FFFFFF , 244px 1666px #FFFFFF , 156px 1672px #FFFFFF , 12px 593px #FFFFFF , 1018px 1694px #FFFFFF;
-  animation: animStar 150s linear infinite;
+  box-shadow: 44px 451px #FFFFFF , 1437px 808px #FFFFFF , 940px 320px #FFFFFF , 1122px 1904px #FFFFFF , 1194px 1202px #FFFFFF;
+  animation: animStar 110s linear infinite;
   border-radius: 10px;
 }
 #particle-square-sm:after {
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 35px;
-  height: 35px;
-  transform: rotate(-95deg);
+  width: 12px;
+  height: 12px;
+  transform: rotate(-7deg);
   background: transparent;
-  box-shadow: 1520px 1617px #FFFFFF , 216px 1038px #FFFFFF , 1009px 611px #FFFFFF , 244px 1666px #FFFFFF , 156px 1672px #FFFFFF , 12px 593px #FFFFFF , 1018px 1694px #FFFFFF;
+  box-shadow: 44px 451px #FFFFFF , 1437px 808px #FFFFFF , 940px 320px #FFFFFF , 1122px 1904px #FFFFFF , 1194px 1202px #FFFFFF;
   border-radius: 10px;
 }
 #particle-square-md {
   position: absolute;
-  width: 37px;
-  height: 37px;
+  width: 197px;
+  height: 197px;
   background: transparent;
-  box-shadow: 533px 677px #FFFFFF , 395px 864px #FFFFFF , 696px 1343px #FFFFFF , 1213px 1663px #FFFFFF , 1664px 1499px #FFFFFF , 728px 100px #FFFFFF , 1421px 652px #FFFFFF;
-  animation: animStar 150s linear infinite;
+  box-shadow: 757px 1593px #FFFFFF , 930px 971px #FFFFFF , 1781px 20px #FFFFFF , 32px 53px #FFFFFF , 1928px 209px #FFFFFF , 574px 769px #FFFFFF , 94px 966px #FFFFFF , 980px 1570px #FFFFFF , 1505px 49px #FFFFFF , 1875px 1254px #FFFFFF , 755px 1368px #FFFFFF , 1618px 1997px #FFFFFF , 685px 1120px #FFFFFF , 1517px 117px #FFFFFF , 994px 748px #FFFFFF , 844px 1206px #FFFFFF , 678px 1719px #FFFFFF;
+  animation: animStar 125s linear infinite;
   border-radius: 10px;
 }
 #particle-square-md:after {
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 37px;
-  height: 37px;
-  transform: rotate(60deg);
+  width: 197px;
+  height: 197px;
+  transform: rotate(36deg);
   background: transparent;
-  box-shadow: 533px 677px #FFFFFF , 395px 864px #FFFFFF , 696px 1343px #FFFFFF , 1213px 1663px #FFFFFF , 1664px 1499px #FFFFFF , 728px 100px #FFFFFF , 1421px 652px #FFFFFF;
+  box-shadow: 757px 1593px #FFFFFF , 930px 971px #FFFFFF , 1781px 20px #FFFFFF , 32px 53px #FFFFFF , 1928px 209px #FFFFFF , 574px 769px #FFFFFF , 94px 966px #FFFFFF , 980px 1570px #FFFFFF , 1505px 49px #FFFFFF , 1875px 1254px #FFFFFF , 755px 1368px #FFFFFF , 1618px 1997px #FFFFFF , 685px 1120px #FFFFFF , 1517px 117px #FFFFFF , 994px 748px #FFFFFF , 844px 1206px #FFFFFF , 678px 1719px #FFFFFF;
   border-radius: 10px;
 }
 #particle-square-lg {
   position: absolute;
-  width: 135px;
-  height: 135px;
+  width: 255px;
+  height: 255px;
   background: transparent;
-  box-shadow: 260px 676px #FFFFFF , 751px 1592px #FFFFFF , 1518px 1324px #FFFFFF , 1189px 1406px #FFFFFF , 755px 1988px #FFFFFF , 1476px 1430px #FFFFFF , 16px 247px #FFFFFF , 915px 1211px #FFFFFF , 412px 644px #FFFFFF , 1500px 1353px #FFFFFF , 1363px 1891px #FFFFFF;
-  animation: animStar 300s linear infinite;
+  box-shadow: 1988px 1193px #FFFFFF , 32px 54px #FFFFFF , 1823px 1106px #FFFFFF , 1554px 1271px #FFFFFF , 882px 168px #FFFFFF , 1780px 318px #FFFFFF , 1865px 3px #FFFFFF , 930px 216px #FFFFFF , 1802px 1857px #FFFFFF , 1691px 1172px #FFFFFF , 840px 1204px #FFFFFF , 1810px 1228px #FFFFFF , 1976px 1870px #FFFFFF , 1981px 206px #FFFFFF , 718px 186px #FFFFFF , 475px 281px #FFFFFF , 1524px 790px #FFFFFF;
+  animation: animStar 150s linear infinite;
   border-radius: 10px;
 }
 #particle-square-lg:after {
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 135px;
-  height: 135px;
-  transform: rotate(-82deg);
+  width: 255px;
+  height: 255px;
+  transform: rotate(-75deg);
   background: transparent;
-  box-shadow: 260px 676px #FFFFFF , 751px 1592px #FFFFFF , 1518px 1324px #FFFFFF , 1189px 1406px #FFFFFF , 755px 1988px #FFFFFF , 1476px 1430px #FFFFFF , 16px 247px #FFFFFF , 915px 1211px #FFFFFF , 412px 644px #FFFFFF , 1500px 1353px #FFFFFF , 1363px 1891px #FFFFFF;
+  box-shadow: 1988px 1193px #FFFFFF , 32px 54px #FFFFFF , 1823px 1106px #FFFFFF , 1554px 1271px #FFFFFF , 882px 168px #FFFFFF , 1780px 318px #FFFFFF , 1865px 3px #FFFFFF , 930px 216px #FFFFFF , 1802px 1857px #FFFFFF , 1691px 1172px #FFFFFF , 840px 1204px #FFFFFF , 1810px 1228px #FFFFFF , 1976px 1870px #FFFFFF , 1981px 206px #FFFFFF , 718px 186px #FFFFFF , 475px 281px #FFFFFF , 1524px 790px #FFFFFF;
   border-radius: 10px;
 }
 
 @keyframes animStar {
   from {
     transform: translateY(0px);
-    transform: rotate(0deg);
   }
   to {
-    transform: translateY(-2000px);
-    transform: rotate(-90deg);
+    transform: translateY(-3000px);
   }
 }
 * {
@@ -907,6 +906,7 @@ header .brand .logo {
   background-size: contain;
   background-image: url("../../assets/logo.png");
   background-position: center;
+  cursor: pointer;
 }
 header .brand .btn-header {
   background-color: white;
@@ -1322,6 +1322,14 @@ form .field {
   z-index: 1;
 }
 
+.qr {
+  height: 220px;
+  width: 220px;
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+}
+
 #toggle {
   position: absolute;
   left: -100%;
@@ -1501,8 +1509,16 @@ form .field {
     bottom: 80px;
   }
 
-  .d-sm-block {
+  .d-md-none {
     display: none !important;
+  }
+
+  .d-md-block {
+    display: block !important;
+  }
+
+  .d-md-flex {
+    display: block !important;
   }
 
   .mobile {
@@ -1833,8 +1849,20 @@ form .field {
     bottom: 100px;
   }
 
+  .d-sm-table {
+    display: table !important;
+  }
+
   .d-sm-block {
-    display: table;
+    display: block !important;
+  }
+
+  .d-sm-flex {
+    display: flex !important;
+  }
+
+  .d-sm-none {
+    display: none !important;
   }
 
   .popup.active .popup-content {
@@ -1959,12 +1987,34 @@ form .field {
     margin-bottom: 40px;
   }
 
+  .form .form_wrap {
+    height: 200px;
+  }
+  .form:after {
+    height: 216.22px;
+  }
+  .form .front {
+    height: 208.21px;
+  }
+  .form:hover .form_wrap {
+    height: 407.96px;
+  }
+  .form .actions .btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+
   .price-range {
     margin-top: 45px;
   }
 
   .fp-slidesNav.fp-bottom {
     bottom: 170px;
+  }
+
+  .costil {
+    /*Знаю что не лучшее решение(время поджимает), но если ты это читаешь, то у тебя есть шанс сделать код лучше*/
+    margin-top: 20px;
   }
 }
 @media (max-height: 750px) {

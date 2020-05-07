@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ClickService</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../app/styles/css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="../app/styles/css/emoji.css" />
+    <link rel="stylesheet" type="text/css" href="../app/styles/css/stylesheet.css" />
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        Вы используете <strong>УСТАРЕЛЫЙ</strong> браузер. Пожалуйста
+        <a href="#">обновите браузер</a> чтобы увидеть истинное качество.
+      </p>
+    <![endif]-->
+    <header>
+        <div class="brand">
+            <div class="logo" onclick="window.location='/';"></div>
+            <button class="btn-header send_website">Записаться на вебинар</button>
+        </div>
+        <nav id="menu">
+            <div data-menuanchor="WeAreSearchingForYou">
+                <a href="/#WeAreSearchingForYou">Сотрудничество</a>
+            </div>
+            <div data-menuanchor="WeCanHelpYou">
+                <a href="/#WeCanHelpYou">Услуги</a>
+            </div>
+            <div data-menuanchor="HereAreExamples">
+                <a href="/#HereAreExamples">Примеры курсов</a>
+            </div>
+            <div data-menuanchor="Contacts">
+                <a href="/#Contacts">Контакты</a>
+            </div>
+        </nav>
+        <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+        <input id="toggle" type="checkbox" class="mobile">
+
+        <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+
+        <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+        <label class="toggle-container mobile" for="toggle">
+        <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+        <span class="button button-toggle mobile"></span>
+        </label>
+
+        <!-- Навигация -->
+        <nav class="nav mobile" id="menu">
+            <div data-menuanchor="WeAreSearchingForYou">
+                <a rel="nofollow" rel="noreferrer" class="nav-item" href="/#WeAreSearchingForYou">Сотрудничество</a>
+            </div>
+            <div data-menuanchor="WeCanHelpYou">
+                <a rel="nofollow" rel="noreferrer" class="nav-item"  href="/#WeCanHelpYou">Услуги</a>
+            </div>
+            <div data-menuanchor="HereAreExamples">
+                <a rel="nofollow" rel="noreferrer" class="nav-item"  href="/#HereAreExamples">Примеры курсов</a>
+            </div>
+            <div data-menuanchor="Contacts">
+                <a rel="nofollow" rel="noreferrer" class="nav-item"  href="/#Contacts">Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <div id="particle">
+        <div id='particle-circle-sm'></div>
+        <div id='particle-circle-md'></div>
+        <div id='particle-circle-lg'></div>
+        <!-- <div id='particle-outline-sm'></div>
+        <div id='particle-outline-md'></div>
+        <div id='particle-outline-lg'></div> -->
+        <div id='particle-square-sm'></div>
+        <div id='particle-square-md'></div>
+        <div id='particle-square-lg'></div>
+    </div>
+    <div id="popups">
+        <div id="insta" class="popup"> 
+            <div class="popup-content">
+                <div class="popup-caption">Отсканируй QR, чтобы зайти на наш Instagramm</div> 
+                <div class="popup-close"><i class="fal fa-times"></i></div>
+                <div class="qr" style="background-image: url(../app/assets/qrInsta.svg);"></div>
+            </div>
+            <div class="popup-overlay"></div>
+        </div>       
+    </div>
+    <div id="fullpage">   
+        <div class="section" data-anchor="WeAreSearchingForYou"  data-color="51a7ff">
+            <div class="flex">
+                <div class="col-lg-6">
+                    <h1>СПАСИБО!</h1>
+                    <p>
+                        Ваша заявка получена, менеджер свяжется с Вами в ближайшее время
+                    </p>
+                    <p>
+                        Подписывайтесь на наш инстаграмм!
+                    </p>
+                    <button class="btn btn-big btn-red d-sm-none d-md-flex" id="insta-btn">
+                        <span class="emoji"><i class="twa twa-winking-face-with-tongue"></i></span>
+                        <span class="text">Подпишись!</span>
+                    </button>
+                    <button class="btn btn-big btn-red d-sm-flex d-md-none" onclick="
+                            window.location.replace(`whatsapp://send?phone=79169686598&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D1%83%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2?%0A&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D1%83%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2?%0A`);
+                        ">
+                        <span class="emoji"><i class="twa twa-winking-face-with-tongue"></i></span>
+                        <span class="text">Подпишись!</span>
+                    </button>
+                </div>
+                <div class="col-lg-6 flex">
+                    <div class="illustration" style="background-image:url('../app/assets/illustrations/instagram.svg');"></div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script type="text/javascript" src="../app/js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="../app/js/fullpage.js"></script>
+    <script type="text/javascript" src="../app/js/engine.js"></script>
+</body>
+
+</html>

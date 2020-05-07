@@ -27,6 +27,7 @@ header {
             background-size: contain;
             background-image: url('../../assets/logo.png');
             background-position: center;
+            cursor: pointer;
         }
 
         .btn-header {
@@ -291,7 +292,6 @@ form .field {
     &:hover .form_wrap {
         height: 568.96px;
     }
-    
 }
 
 .illustration {
@@ -484,3 +484,10 @@ form .field {
     }
 }
 
+.qr{
+    height: 220px;
+    width: 220px;
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+}

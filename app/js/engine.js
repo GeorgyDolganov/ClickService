@@ -36,8 +36,7 @@ function update_slide(destination) {
 
 $('body').on('submit', '#send_message form', function(e){ 
 	e.preventDefault();
-	$('.popup').removeClass('active');
-	$('#alert').addClass('active');
+	onclick="window.location='thanks/'";
 });
 
 $('.popup').on('click', '.popup-close, .popup-overlay', function(){
@@ -49,17 +48,35 @@ $('.send_website').click(function(){
 	$('#order_webinar').addClass('active');
 });
 
+$('.order').click(function(){ 
+	$('.popup').removeClass('active');
+	$('#order').addClass('active');
+});
+
+$('#whatsapp-btn').click(function(){ 
+	$('.popup').removeClass('active');
+	$('#whatsapp').addClass('active');
+});
+
+$('#insta-btn').click(function(){ 
+	$('.popup').removeClass('active');
+	$('#insta').addClass('active');
+});
+
 $('body').on('submit', '#order_webinar form', function(e){ 
 	e.preventDefault();
 	let f = $(this);
 	send_message_from_landing(f);
 });
 
+$('body').on('submit', '#order form', function(e){ 
+	e.preventDefault();
+	let f = $(this);
+	send_message_from_landing(f);
+});
+
 function send_message_from_landing(f) {
-	$('.popup').removeClass('active');
-	$('#alert').addClass('active');
-	$('#alert .popup_caption').text('Готово');
-	$('#alert .popup_message').text(d.message);
+	window.location='thanks/';
 }
 
 var myFullpage = new fullpage('#fullpage', {
