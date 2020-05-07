@@ -36,7 +36,8 @@ function update_slide(destination) {
 
 $('body').on('submit', '#send_message form', function(e){ 
 	e.preventDefault();
-	onclick="window.location='thanks/'";
+	let f = $(this);
+	send_message_from_landing(f);
 });
 
 $('.popup').on('click', '.popup-close, .popup-overlay', function(){
@@ -93,7 +94,7 @@ var myFullpage = new fullpage('#fullpage', {
 
 	//Scrolling
 	css3: true,
-	scrollingSpeed: 1200,
+	scrollingSpeed: 1400,
 	autoScrolling: true,
 	fitToSection: true,
 	fitToSectionDelay: 1000,
