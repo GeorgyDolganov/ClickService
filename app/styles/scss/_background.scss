@@ -9,12 +9,12 @@
 }
 
 
-$shadows-circle-sm: multiple-box-shadow(random(20));
-$shadows-circle-md: multiple-box-shadow(random(20));
-$shadows-circle-lg: multiple-box-shadow(random(20));
-$shadows-square-sm: multiple-box-shadow(random(20));
-$shadows-square-md: multiple-box-shadow(random(20));
-$shadows-square-lg: multiple-box-shadow(random(20));
+$shadows-circle-sm: multiple-box-shadow(random(5));
+$shadows-circle-md: multiple-box-shadow(random(3));
+$shadows-circle-lg: multiple-box-shadow(random(1));
+$shadows-square-sm: multiple-box-shadow(random(5));
+$shadows-square-md: multiple-box-shadow(random(3));
+$shadows-square-lg: multiple-box-shadow(random(1));
 
 $size-circle-sm: random(100) + px;
 $size-circle-md: random(200) + px;
@@ -37,7 +37,7 @@ $rotate-lg: random(360) - random(360) + deg;
       height: $size-circle-sm;
       background: transparent;
       box-shadow: $shadows-circle-sm;
-      animation: animStar 110s linear infinite;
+      animation: animStar 55s linear infinite;
       border-radius: 50%;
       &:after{
         content: " ";
@@ -56,7 +56,7 @@ $rotate-lg: random(360) - random(360) + deg;
       height: $size-circle-md;
       background: transparent;
       box-shadow: $shadows-circle-md;
-      animation: animStar 25s linear infinite;
+      animation: animStar 67.5s linear infinite;
       border-radius: 50%;
       &:after{
         content: " ";
@@ -75,7 +75,7 @@ $rotate-lg: random(360) - random(360) + deg;
       height: $size-circle-lg;
       background: transparent;
       box-shadow: $shadows-circle-lg;
-      animation: animStar 150s linear infinite;
+      animation: animStar 75s linear infinite;
       border-radius: 50%;
       &:after{
         content: " ";
@@ -115,7 +115,7 @@ $rotate-lg: random(360) - random(360) + deg;
       height: $size-square-sm;
       background: transparent;
       box-shadow: $shadows-square-sm;
-      animation: animStar 110s linear infinite;
+      animation: animStar 55s linear infinite;
       border-radius: 10px;
 
       &:after {
@@ -136,7 +136,7 @@ $rotate-lg: random(360) - random(360) + deg;
       height: $size-square-md;
       background: transparent;
       box-shadow: $shadows-square-md;
-      animation: animStar 125s linear infinite;
+      animation: animStar 67.5s linear infinite;
       border-radius: 10px;
 
       &:after {
@@ -157,7 +157,7 @@ $rotate-lg: random(360) - random(360) + deg;
       height: $size-square-lg;
       background: transparent;
       box-shadow: $shadows-square-lg;
-      animation: animStar 150s linear infinite;
+      animation: animStar 75s linear infinite;
       border-radius: 10px;
 
       &:after {
@@ -182,7 +182,7 @@ $rotate-lg: random(360) - random(360) + deg;
   }
     
   to{
-    transform: translateY(-3000px);
+    transform: translateY(-1000px);
     //transform: rotate(-90deg);
   }	
 }

@@ -26,7 +26,7 @@
     <![endif]-->
     <header>
         <div class="brand">
-            <div class="logo" onclick="window.location='../';"></div>
+            <div class="logo" onclick="window.location='#';"></div>
             <button class="btn-header send_website">Записаться на вебинар</button>
         </div>
         <nav id="menu">
@@ -134,9 +134,16 @@
         </div>
         <div id="whatsapp" class="popup"> 
             <div class="popup-content">
-                <div class="popup-caption">Отсканируй QR, чтобы написать в whatsapp</div> 
+                <div class="popup-caption">Сканируйте QR-code</div> 
                 <div class="popup-close"><i class="fal fa-times"></i></div>
-                <div class="qr" style="background-image: url(../app/assets/qrWhatsApp.svg);"></div>
+                <div class="qr" style="background-image: url(app/assets/qrWhatsApp.svg);"></div>
+                <p class="popup-text-big">Используйте свой телефон для сканирования кода</p>
+                <p class="popup-text">Или напишите любой текст на номер</p>
+                <h3 class="popup-caption">+7 916 968-65-98</h3> 
+                <p class="popup-text">Так-же вы можете использовать Web версию</p>
+                <button class="btn"  onclick="window.location='https://wa.me/79169686598?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D1%83%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2?%0A';">
+                    <span class="text">Открыть WEB WhatsApp</span>
+                </button>
             </div>
             <div class="popup-overlay"></div>
         </div>       
@@ -174,13 +181,13 @@
                     </p>
                     <button class="btn btn-big btn-purple d-sm-none d-md-flex" id="whatsapp-btn">
                         <span class="emoji"><i class="twa twa-winking-face-with-tongue"></i></span>
-                        <span class="text">Написать в WhatsUp</span>
+                        <span class="text">Написать в WhatsApp</span>
                     </button>
                     <button class="btn btn-big btn-purple d-sm-flex d-md-none" onclick="
                             window.location.replace(`whatsapp://send?phone=79169686598&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D1%83%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2?%0A&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D1%83%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2?%0A`);
                         ">
                         <span class="emoji"><i class="twa twa-winking-face-with-tongue"></i></span>
-                        <span class="text">Написать в WhatsUp</span>
+                        <span class="text">Написать в WhatsApp</span>
                     </button>
                 </div>
                 <div class="col-lg-6 flex">
@@ -319,7 +326,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration courses">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/10.svg');"></div>
-                        <button onclick="window.location='https://course-clickchat.me/';" class="btn btn-purple">
+                        <button onclick="window.location='https://onlineschool-clickchat.me';" class="btn btn-purple">
                             <span class="emoji"><i class="twa twa twa-victory-hand"></i></span>
                             <span class="text">Перейти</span>
                         </button>
@@ -407,7 +414,7 @@
                 </div>
             </div>
         </div>
-        <div class="section d-sm-table d-md-none contacts-info" data-anchor="Contacts-2" data-color="ffd170">
+        <div class="section d-sm-table d-md-none contacts-info" data-anchor="Hello!" data-color="ffd170">
                 <h2 class="col-12">Контакты</h2>
                     <p class="col-12">
                         ООО «Кликсервис». Москва, Походный проезд 4, строение 1, офис 405<br>

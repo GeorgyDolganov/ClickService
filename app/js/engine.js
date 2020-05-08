@@ -19,9 +19,9 @@ function update_section(destination) {
 	$('body').css({'background-color': '#'+$('.section:eq('+destination.index+')').data('color')});
 	$('header').attr('data-slide', $('.section:eq('+destination.index+')').attr('id'));
 	$('.section.init').removeClass('init');
-	setTimeout(function(){
+	setInterval(function(){
 		fullpage_api.moveSlideRight();
-	},2500);
+	},5000);
 }
 
 function update_slide(destination) {
@@ -101,8 +101,8 @@ var myFullpage = new fullpage('#fullpage', {
 	scrollBar: false,
 	easing: 'easeInOutCubic',
 	easingcss3: 'ease-in-out',
-	loopBottom: false,
-	loopTop: false,
+	loopBottom: true,
+	loopTop: true,
 	loopHorizontal: true,
 	continuousVertical: false,
 	continuousHorizontal: true,
@@ -116,7 +116,7 @@ var myFullpage = new fullpage('#fullpage', {
 	scrollOverflow: false,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,
-	touchSensitivity: 15,
+	touchSensitivity: 30,
 	bigSectionsDestination: null,
 
 	//Accessibility
@@ -127,7 +127,6 @@ var myFullpage = new fullpage('#fullpage', {
 	//Design
 	controlArrows: true,
 	verticalCentered: true,
-	//sectionsColor : ['#FFD271', '#51A7FF', '#FB6172', '#FB6172'],
 	fixedElements: '#head',
 	responsiveWidth: 0,
 	responsiveHeight: 0,
