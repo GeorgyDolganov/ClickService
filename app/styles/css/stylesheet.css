@@ -753,10 +753,10 @@
 }
 #particle-circle-sm {
   position: absolute;
-  width: 65px;
-  height: 65px;
+  width: 20px;
+  height: 20px;
   background: transparent;
-  box-shadow: 432px 401px #FFFFFF , 1376px 768px #FFFFFF , 878px 1534px #FFFFFF , 159px 1015px #FFFFFF , 972px 151px #FFFFFF;
+  box-shadow: 744px 1631px #FFFFFF , 728px 1773px #FFFFFF , 1601px 1879px #FFFFFF;
   animation: animStar 55s linear infinite;
   border-radius: 50%;
 }
@@ -764,18 +764,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 65px;
-  height: 65px;
+  width: 20px;
+  height: 20px;
   background: transparent;
-  box-shadow: 432px 401px #FFFFFF , 1376px 768px #FFFFFF , 878px 1534px #FFFFFF , 159px 1015px #FFFFFF , 972px 151px #FFFFFF;
+  box-shadow: 744px 1631px #FFFFFF , 728px 1773px #FFFFFF , 1601px 1879px #FFFFFF;
   border-radius: 50%;
 }
 #particle-circle-md {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 164px;
+  height: 164px;
   background: transparent;
-  box-shadow: 917px 1895px #FFFFFF , 1753px 1px #FFFFFF , 1991px 22px #FFFFFF;
+  box-shadow: 196px 46px #FFFFFF , 1632px 698px #FFFFFF , 871px 309px #FFFFFF;
   animation: animStar 67.5s linear infinite;
   border-radius: 50%;
 }
@@ -783,18 +783,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 8px;
-  height: 8px;
+  width: 164px;
+  height: 164px;
   background: transparent;
-  box-shadow: 917px 1895px #FFFFFF , 1753px 1px #FFFFFF , 1991px 22px #FFFFFF;
+  box-shadow: 196px 46px #FFFFFF , 1632px 698px #FFFFFF , 871px 309px #FFFFFF;
   border-radius: 50%;
 }
 #particle-circle-lg {
   position: absolute;
-  width: 108px;
-  height: 108px;
+  width: 12px;
+  height: 12px;
   background: transparent;
-  box-shadow: 1146px 1878px #FFFFFF , 723px 1510px #FFFFFF , 1966px 1059px #FFFFFF;
+  box-shadow: 138px 1996px #FFFFFF , 62px 1088px #FFFFFF , 1123px 803px #FFFFFF;
   animation: animStar 75s linear infinite;
   border-radius: 50%;
 }
@@ -802,18 +802,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 108px;
-  height: 108px;
+  width: 12px;
+  height: 12px;
   background: transparent;
-  box-shadow: 1146px 1878px #FFFFFF , 723px 1510px #FFFFFF , 1966px 1059px #FFFFFF;
+  box-shadow: 138px 1996px #FFFFFF , 62px 1088px #FFFFFF , 1123px 803px #FFFFFF;
   border-radius: 50%;
 }
 #particle-square-sm {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 77px;
+  height: 77px;
   background: transparent;
-  box-shadow: 502px 1973px #FFFFFF , 569px 311px #FFFFFF , 777px 531px #FFFFFF;
+  box-shadow: 1739px 549px #FFFFFF , 1011px 1072px #FFFFFF , 1133px 607px #FFFFFF;
   animation: animStar 55s linear infinite;
   border-radius: 10px;
 }
@@ -821,19 +821,19 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 25px;
-  height: 25px;
-  transform: rotate(-62deg);
+  width: 77px;
+  height: 77px;
+  transform: rotate(29deg);
   background: transparent;
-  box-shadow: 502px 1973px #FFFFFF , 569px 311px #FFFFFF , 777px 531px #FFFFFF;
+  box-shadow: 1739px 549px #FFFFFF , 1011px 1072px #FFFFFF , 1133px 607px #FFFFFF;
   border-radius: 10px;
 }
 #particle-square-md {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 86px;
+  height: 86px;
   background: transparent;
-  box-shadow: 641px 1898px #FFFFFF , 87px 541px #FFFFFF , 1019px 1763px #FFFFFF;
+  box-shadow: 1645px 1504px #FFFFFF , 51px 1070px #FFFFFF;
   animation: animStar 67.5s linear infinite;
   border-radius: 10px;
 }
@@ -841,19 +841,19 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 15px;
-  height: 15px;
-  transform: rotate(-69deg);
+  width: 86px;
+  height: 86px;
+  transform: rotate(160deg);
   background: transparent;
-  box-shadow: 641px 1898px #FFFFFF , 87px 541px #FFFFFF , 1019px 1763px #FFFFFF;
+  box-shadow: 1645px 1504px #FFFFFF , 51px 1070px #FFFFFF;
   border-radius: 10px;
 }
 #particle-square-lg {
   position: absolute;
-  width: 279px;
-  height: 279px;
+  width: 255px;
+  height: 255px;
   background: transparent;
-  box-shadow: 1379px 497px #FFFFFF , 399px 278px #FFFFFF , 563px 606px #FFFFFF;
+  box-shadow: 1799px 80px #FFFFFF , 1106px 191px #FFFFFF , 440px 1141px #FFFFFF;
   animation: animStar 75s linear infinite;
   border-radius: 10px;
 }
@@ -861,11 +861,11 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 279px;
-  height: 279px;
-  transform: rotate(98deg);
+  width: 255px;
+  height: 255px;
+  transform: rotate(-29deg);
   background: transparent;
-  box-shadow: 1379px 497px #FFFFFF , 399px 278px #FFFFFF , 563px 606px #FFFFFF;
+  box-shadow: 1799px 80px #FFFFFF , 1106px 191px #FFFFFF , 440px 1141px #FFFFFF;
   border-radius: 10px;
 }
 
@@ -2121,6 +2121,154 @@ form .field {
   }
   .form:after {
     height: 155px;
+  }
+}
+@media (max-height: 550px) {
+  p {
+    padding: 0;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .popup.active .popup-content {
+    padding: 20px;
+  }
+  .popup-content .popup-caption {
+    font-size: 11px;
+  }
+  .popup-content .field label {
+    font-size: 10px;
+  }
+  .popup-content .field input {
+    font-size: 9px;
+    line-height: 9px;
+  }
+  .popup-content .field_check label {
+    font-size: 8px;
+  }
+
+  .contacts-info h3 {
+    font-size: 10px;
+  }
+
+  .contacts-info nav div a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .contacts .slide-sticky p {
+    display: none;
+  }
+
+  .slide-illustration {
+    padding-top: 45px;
+  }
+  .slide-illustration .btn {
+    top: 280px;
+  }
+  .slide-illustration .illustration {
+    height: 180px;
+  }
+  .slide-illustration.courses .btn {
+    top: 345px;
+  }
+
+  .price-range {
+    bottom: -80px;
+  }
+
+  #fp-nav ul li,
+.fp-slidesNav ul li {
+    height: 13px;
+    width: 14px;
+    margin: 0 5px;
+  }
+
+  .fp-slidesNav {
+    padding-left: 25px;
+  }
+
+  .nav {
+    margin-right: 10px;
+  }
+
+  .form .form_wrap {
+    height: 130px;
+  }
+  .form .form_wrap form {
+    padding: 10px 10px 190px 10px;
+  }
+  .form .field_check {
+    margin-bottom: 10px;
+  }
+  .form .field_check label {
+    font-size: 8px;
+    line-height: normal;
+  }
+  .form .field {
+    margin-bottom: 5px;
+  }
+  .form .field textarea {
+    font-size: 9px;
+    padding: 0px 5px;
+    border-radius: 5px;
+  }
+  .form .field input {
+    font-size: 9px;
+    padding: 0px 5px;
+    border-radius: 5px;
+  }
+  .form .front {
+    height: 115px;
+  }
+  .form:after {
+    height: 120px;
+  }
+  .form:hover .form_wrap {
+    height: 270px;
+  }
+
+  .contacts-info h2 {
+    font-size: 10px;
+  }
+  .contacts-info h3 {
+    font-size: 8px;
+  }
+  .contacts-info p {
+    font-size: 8px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+
+  .illustration {
+    height: 125px;
+  }
+
+  .slide-illustration .btn {
+    top: 236px;
+  }
+
+  .slide-illustration.courses .btn {
+    top: 230px;
+  }
+
+  .slide-illustration .illustration {
+    height: 130px;
+  }
+
+  .slide-illustration.courses .illustration {
+    height: 150px;
+  }
+
+  .fp-slidesNav.fp-bottom {
+    bottom: 18px;
   }
 }
 @media (max-height: 500px) {
