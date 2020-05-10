@@ -21,7 +21,7 @@ function update_section(destination) {
 	$('.section.init').removeClass('init');
 	setInterval(function(){
 		fullpage_api.moveSlideRight();
-	},7000);
+	},10000);
 }
 
 function update_slide(destination) {
