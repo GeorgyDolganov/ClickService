@@ -12,6 +12,7 @@ $('.nav-item').click(function (event) {
 
 $(document).ready(function(){
 	$('body').css({'background-color': '#'+$('.section:eq(0)').data('color')});
+	Reload();
 });
 
 function update_section(destination) {
@@ -33,6 +34,17 @@ function update_slide(destination) {
 	// 	fullpage_api.moveSlideRight();
 	// },10000);
 }
+
+/*! Reloads page on every visit */
+function Reload() {
+    if ((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
+		window.onpageshow = function(evt) {
+		if (evt.persisted) {
+		document.body.style.display = "none";
+		location.reload();
+		}
+	};
+ 
 
 $('body').on('submit', '#send_message form', function(e){ 
 	e.preventDefault();
