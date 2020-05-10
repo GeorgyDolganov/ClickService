@@ -39,12 +39,13 @@ function update_slide(destination) {
 function Reload() {
     if ((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
 		window.onpageshow = function(evt) {
-		if (evt.persisted) {
-		document.body.style.display = "none";
-		location.reload();
-		}
-	};
- 
+			if (evt.persisted) {
+			document.body.style.display = "none";
+			location.reload();
+			}
+		};
+	}
+} 
 
 $('body').on('submit', '#send_message form', function(e){ 
 	e.preventDefault();
