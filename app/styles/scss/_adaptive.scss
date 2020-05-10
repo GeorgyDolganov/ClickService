@@ -219,8 +219,9 @@ $breakpoint-desktop: 1360px;
             transform: translateY(-50%) scaleY(5);
             transition: 0.5s;
         }
+
         &:hover {
-            color:#00000000;
+            color: #00000000;
         }
     }
 }
@@ -230,22 +231,23 @@ $breakpoint-desktop: 1360px;
     .form {
         bottom: 80px;
     }
+
     .mobile {
         display: none;
     }
 }
 
-@media (min-width: $breakpoint-tablet){
+@media (min-width: $breakpoint-tablet) {
     .d-md-none {
         display: none !important;
     }
 
-    .d-md-block{
-        display: block !important; 
+    .d-md-block {
+        display: block !important;
     }
 
-    .d-md-flex{
-        display: flex !important; 
+    .d-md-flex {
+        display: flex !important;
     }
 
 }
@@ -396,28 +398,29 @@ $breakpoint-desktop: 1360px;
 }
 
 @media (max-width: $breakpoint-tablet) {
-    #particle{
+    #particle {
         overflow: hidden;
-        display:none;
+        display: none;
     }
 
     .flex {
         .col-lg-6:first-child {
-          order: 2;
+            order: 2;
         }
-    
+
         .col-lg-6:last-child {
-          order: 1;
+            order: 1;
         }
-    
+
         .col-lg-5:first-child {
-          order: 2;
+            order: 2;
         }
-    
+
         .col-lg-7:last-child {
-          order: 1;
+            order: 1;
         }
-      }
+    }
+
     header {
         padding: 20px 0;
 
@@ -558,15 +561,16 @@ $breakpoint-desktop: 1360px;
 
         &-info {
 
-            .fp-tableCell{
+            .fp-tableCell {
                 padding: 0 30px;
             }
 
             p {
                 padding-top: 10px;
                 padding-bottom: 20px;
-                + p{
-                    padding-top:0;
+
+                +p {
+                    padding-top: 0;
                 }
             }
 
@@ -668,40 +672,84 @@ $breakpoint-desktop: 1360px;
     }
 
     .d-sm-table {
-        display: table!important;
+        display: table !important;
     }
 
     .d-sm-block {
-        display: block!important;
+        display: block !important;
     }
 
     .d-sm-flex {
-        display: flex!important;
+        display: flex !important;
     }
 
     .d-sm-none {
-        display: none!important;
+        display: none !important;
     }
 
     .popup {
-        &.active{
-            .popup-content{
+        &.active {
+            .popup-content {
                 transform: translateX(-9.5%) translateY(-50%);
                 opacity: 1;
             }
+
             .popup-overlay {
                 opacity: 0.5;
             }
         }
-    
-        &-content{
+
+        &-content {
             left: 16%;
+
             .popup-message {
                 font-size: 12px;
             }
         }
     }
 
+}
+
+@media (max-width: 400px) {
+    header .brand .logo {
+        margin: 0px 30px 0 30px;
+        min-width: 78px;
+        height: 25px;
+    }
+
+    .illustration {
+        height: 180px;
+    }
+
+    .btn {
+        padding: 15px 10px 15px 5px;
+        font-size: 12px;
+
+        .emoji {
+            font-size: 22px;
+        }
+    }
+
+    .slide-illustration {
+        .illustration {
+            height: 180px;
+        }
+
+        .btn {
+            top: 375px;
+            right: 20px;
+        }
+
+        &.courses {
+            .illustration {
+                height: 230px;
+            }
+
+            .btn {
+                top: 330px;
+            }
+        }
+    }
 }
 
 @media (max-width: 350px) {
@@ -754,12 +802,13 @@ $breakpoint-desktop: 1360px;
         }
     }
 
-    #toggle:checked ~ .nav {
+    #toggle:checked~.nav {
         transform: translate(-135px, 100px);
     }
 
     .btn {
-        font-size:12px;
+        font-size: 12px;
+
         .emoji {
             font-size: 22px;
         }
@@ -792,9 +841,11 @@ $breakpoint-desktop: 1360px;
 
     .slide-illustration {
         padding-top: 38px;
+
         .illustration {
             height: 180px;
         }
+
         .btn {
             top: 285px;
         }
@@ -808,56 +859,60 @@ $breakpoint-desktop: 1360px;
         padding: 5px !important;
         font-size: 10px !important;
     }
-    
+
 
 }
 
-@media (max-height: 800px) and (min-width: $breakpoint-desktop){
+@media (max-height: 800px) and (min-width: $breakpoint-desktop) {
 
     h3 {
         font-size: 14px;
     }
-    
+
     .contacts p {
         font-size: 12px;
         padding: 0px 0;
     }
 
-    .illustration{
+    .illustration {
         height: 475px;
     }
 
-    .slide{
-        .illustration{
-           margin-top: 90px;
-           height: 400px;
-           margin-bottom: 40px; 
+    .slide {
+        .illustration {
+            margin-top: 90px;
+            height: 400px;
+            margin-bottom: 40px;
         }
     }
 
-    .form{
-        .form_wrap{
-                height: 200px;
+    .form {
+        .form_wrap {
+            height: 200px;
         }
-        &:after{
+
+        &:after {
             height: 216.22px;
         }
-        .front{
+
+        .front {
             height: 208.21px;
         }
-        &:hover{
+
+        &:hover {
             .form_wrap {
                 height: 407.96px;
             }
         }
+
         .actions .btn {
             padding: 10px;
             font-size: 16px;
         }
     }
 
-    .price{
-        &-range{
+    .price {
+        &-range {
             margin-top: 45px;
         }
     }
@@ -865,8 +920,8 @@ $breakpoint-desktop: 1360px;
     .fp-slidesNav.fp-bottom {
         bottom: 170px;
     }
-    
-    .costil{
+
+    .costil {
         /*Знаю что не лучшее решение(время поджимает), но если ты это читаешь, то у тебя есть шанс сделать код лучше*/
         margin-top: 20px;
     }
@@ -887,7 +942,7 @@ $breakpoint-desktop: 1360px;
 
 @media (max-height: 570px) {
     .fp-slidesNav.fp-bottom {
-        bottom: 50px;
+        bottom: 80px;
     }
 }
 
@@ -914,13 +969,32 @@ $breakpoint-desktop: 1360px;
     }
 }
 
+@media (max-height: 600px) {
+    .form{
+        .front{
+            height: 145px;
+        }
+        .form_wrap{
+            height: 145px;
+        }
+        &:hover{
+            .form_wrap {
+                height: 380px;
+            }
+        }
+        &:after {
+            height: 155px;
+        }
+    }
+}
+
 @media (max-height: 500px) {
     p {
         padding: 0;
         font-size: 10px;
     }
 
-    h1{
+    h1 {
         font-size: 14px;
     }
 
@@ -975,48 +1049,54 @@ $breakpoint-desktop: 1360px;
     .fp-slidesNav {
         padding-left: 25px;
     }
-}
 
-@media (max-height: 500px) {
-
-    .nav{
+    .nav {
         margin-right: 10px;
     }
-    
+
 
     .form {
         .form_wrap {
             height: 130px;
+
             form {
                 padding: 10px 10px 190px 10px;
             }
         }
-        .field_check{
+
+        .field_check {
             margin-bottom: 10px;
-            label{
+
+            label {
                 font-size: 8px;
                 line-height: normal;
             }
         }
-        .field{
+
+        .field {
             margin-bottom: 5px;
-            textarea{
-                font-size:9px;
+
+            textarea {
+                font-size: 9px;
                 padding: 0px 5px;
                 border-radius: 5px;
             }
-            input{
-                font-size:9px;
+
+            input {
+                font-size: 9px;
                 padding: 0px 5px;
                 border-radius: 5px;
             }
         }
+
         .front {
             height: 115px;
         }
+
         &:after {
             height: 120px;
         }
+
         &:hover .form_wrap {
             height: 270px;
         }
@@ -1067,17 +1147,17 @@ $breakpoint-desktop: 1360px;
 
 @media (max-height: 400px) {
 
-    h1{
-        font-size:10px;
+    h1 {
+        font-size: 10px;
     }
 
-    p{
+    p {
         font-size: 9px;
     }
 
-    header{
-        .brand{
-            .logo{
+    header {
+        .brand {
+            .logo {
                 margin: 0px 10px 0 25px;
                 min-width: 60px;
                 height: 25px;
@@ -1085,28 +1165,33 @@ $breakpoint-desktop: 1360px;
         }
     }
 
-    .nav{
+    .nav {
         margin-right: 10px;
     }
-    
-    .price{
+
+    .price {
         font-size: 24px;
-        &.discount{
+
+        &.discount {
             font-size: 30px;
-            span{
+
+            span {
                 font-size: 14px;
             }
-            ::before{
+
+            ::before {
                 height: 5px;
                 width: 90px;
                 bottom: 10px;
                 right: 30px;
             }
         }
-        span{
+
+        span {
             font-size: 10px;
         }
-        &-range{
+
+        &-range {
             bottom: -52px;
         }
     }
@@ -1114,36 +1199,45 @@ $breakpoint-desktop: 1360px;
     .form {
         .form_wrap {
             height: 130px;
+
             form {
                 padding: 10px 10px 190px 10px;
             }
         }
-        .field_check{
+
+        .field_check {
             margin-bottom: 10px;
-            label{
+
+            label {
                 font-size: 8px;
                 line-height: normal;
             }
         }
-        .field{
+
+        .field {
             margin-bottom: 5px;
-            textarea{
-                font-size:9px;
+
+            textarea {
+                font-size: 9px;
                 padding: 0px 5px;
                 border-radius: 5px;
             }
-            input{
-                font-size:9px;
+
+            input {
+                font-size: 9px;
                 padding: 0px 5px;
                 border-radius: 5px;
             }
         }
+
         .front {
             height: 115px;
         }
+
         &:after {
             height: 120px;
         }
+
         &:hover .form_wrap {
             height: 270px;
         }

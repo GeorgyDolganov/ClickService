@@ -1,11 +1,15 @@
 * {
     font-family: 'Raleway';
     text-rendering: optimizeLegibility;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 body {
     background-color: $yellow;
     transition: 0.6s ease-in-out;
+    -webkit-text-size-adjust: none;
 }
 
 header {
@@ -63,6 +67,12 @@ header {
             }
         }
     }
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: checkbox!important;
+    -moz-appearance: checkbox!important;
+    appearance: checkbox!important;
 }
 
 nav {
