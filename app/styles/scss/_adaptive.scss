@@ -98,8 +98,8 @@ $breakpoint-desktop: 1360px;
 .button-toggle {
     position: absolute;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 27px;
     margin: 0 20px;
     background-color: transparent;
     border: none;
@@ -285,6 +285,11 @@ $breakpoint-desktop: 1360px;
         }
     }
 
+    .form .actions .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: $breakpoint-desktop) and (min-width:$breakpoint-tablet) {
@@ -308,12 +313,13 @@ $breakpoint-desktop: 1360px;
 
     h2 {
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
+        padding: 0;
     }
 
     .illustration {
@@ -377,20 +383,26 @@ $breakpoint-desktop: 1360px;
 
     .form {
         bottom: 30px;
-
+        width: 400px;
         .front {
             background-size: cover;
             background-position: top center;
-            height: 50%;
+            height: 160px;
+            width: 410px;
+        }
+
+        .form_wrap {
+            height: 160px;
         }
 
         &:after {
-            height: 50%;
+            height: 165px;
+            width: 410px;
         }
 
         &:hover {
             .form_wrap {
-                height: 490.96px;
+                height: 420px;
             }
         }
     }
@@ -1084,7 +1096,7 @@ $breakpoint-desktop: 1360px;
 
     .form {
         .form_wrap {
-            height: 130px;
+            height: 105px;
 
             form {
                 padding: 10px 10px 190px 10px;

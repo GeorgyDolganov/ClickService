@@ -621,7 +621,7 @@
   font-weight: 700;
   border-radius: 10px;
   border: none;
-  padding: 14px 30px;
+  padding: 10px 30px;
   font-size: 24px;
   color: black;
   -webkit-box-shadow: 0px 5px 0px 0px #F9BA62;
@@ -753,10 +753,10 @@
 }
 #particle-circle-sm {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 70px;
+  height: 70px;
   background: transparent;
-  box-shadow: 744px 1631px #FFFFFF , 728px 1773px #FFFFFF , 1601px 1879px #FFFFFF;
+  box-shadow: 1388px 615px #FFFFFF , 519px 782px #FFFFFF , 1008px 1200px #FFFFFF , 1130px 61px #FFFFFF , 1152px 522px #FFFFFF;
   animation: animStar 55s linear infinite;
   border-radius: 50%;
 }
@@ -764,18 +764,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 20px;
-  height: 20px;
+  width: 70px;
+  height: 70px;
   background: transparent;
-  box-shadow: 744px 1631px #FFFFFF , 728px 1773px #FFFFFF , 1601px 1879px #FFFFFF;
+  box-shadow: 1388px 615px #FFFFFF , 519px 782px #FFFFFF , 1008px 1200px #FFFFFF , 1130px 61px #FFFFFF , 1152px 522px #FFFFFF;
   border-radius: 50%;
 }
 #particle-circle-md {
   position: absolute;
-  width: 164px;
-  height: 164px;
+  width: 53px;
+  height: 53px;
   background: transparent;
-  box-shadow: 196px 46px #FFFFFF , 1632px 698px #FFFFFF , 871px 309px #FFFFFF;
+  box-shadow: 385px 605px #FFFFFF , 919px 409px #FFFFFF , 564px 398px #FFFFFF;
   animation: animStar 67.5s linear infinite;
   border-radius: 50%;
 }
@@ -783,18 +783,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 164px;
-  height: 164px;
+  width: 53px;
+  height: 53px;
   background: transparent;
-  box-shadow: 196px 46px #FFFFFF , 1632px 698px #FFFFFF , 871px 309px #FFFFFF;
+  box-shadow: 385px 605px #FFFFFF , 919px 409px #FFFFFF , 564px 398px #FFFFFF;
   border-radius: 50%;
 }
 #particle-circle-lg {
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 67px;
+  height: 67px;
   background: transparent;
-  box-shadow: 138px 1996px #FFFFFF , 62px 1088px #FFFFFF , 1123px 803px #FFFFFF;
+  box-shadow: 1695px 628px #FFFFFF , 1192px 668px #FFFFFF , 1558px 652px #FFFFFF;
   animation: animStar 75s linear infinite;
   border-radius: 50%;
 }
@@ -802,18 +802,18 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 12px;
-  height: 12px;
+  width: 67px;
+  height: 67px;
   background: transparent;
-  box-shadow: 138px 1996px #FFFFFF , 62px 1088px #FFFFFF , 1123px 803px #FFFFFF;
+  box-shadow: 1695px 628px #FFFFFF , 1192px 668px #FFFFFF , 1558px 652px #FFFFFF;
   border-radius: 50%;
 }
 #particle-square-sm {
   position: absolute;
-  width: 77px;
-  height: 77px;
+  width: 17px;
+  height: 17px;
   background: transparent;
-  box-shadow: 1739px 549px #FFFFFF , 1011px 1072px #FFFFFF , 1133px 607px #FFFFFF;
+  box-shadow: 1706px 551px #FFFFFF , 669px 1753px #FFFFFF , 690px 1646px #FFFFFF , 1778px 282px #FFFFFF , 1676px 1247px #FFFFFF;
   animation: animStar 55s linear infinite;
   border-radius: 10px;
 }
@@ -821,19 +821,19 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 77px;
-  height: 77px;
-  transform: rotate(29deg);
+  width: 17px;
+  height: 17px;
+  transform: rotate(-265deg);
   background: transparent;
-  box-shadow: 1739px 549px #FFFFFF , 1011px 1072px #FFFFFF , 1133px 607px #FFFFFF;
+  box-shadow: 1706px 551px #FFFFFF , 669px 1753px #FFFFFF , 690px 1646px #FFFFFF , 1778px 282px #FFFFFF , 1676px 1247px #FFFFFF;
   border-radius: 10px;
 }
 #particle-square-md {
   position: absolute;
-  width: 86px;
-  height: 86px;
+  width: 81px;
+  height: 81px;
   background: transparent;
-  box-shadow: 1645px 1504px #FFFFFF , 51px 1070px #FFFFFF;
+  box-shadow: 1358px 1638px #FFFFFF , 1251px 1867px #FFFFFF , 1115px 1430px #FFFFFF;
   animation: animStar 67.5s linear infinite;
   border-radius: 10px;
 }
@@ -841,19 +841,19 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 86px;
-  height: 86px;
-  transform: rotate(160deg);
+  width: 81px;
+  height: 81px;
+  transform: rotate(11deg);
   background: transparent;
-  box-shadow: 1645px 1504px #FFFFFF , 51px 1070px #FFFFFF;
+  box-shadow: 1358px 1638px #FFFFFF , 1251px 1867px #FFFFFF , 1115px 1430px #FFFFFF;
   border-radius: 10px;
 }
 #particle-square-lg {
   position: absolute;
-  width: 255px;
-  height: 255px;
+  width: 78px;
+  height: 78px;
   background: transparent;
-  box-shadow: 1799px 80px #FFFFFF , 1106px 191px #FFFFFF , 440px 1141px #FFFFFF;
+  box-shadow: 68px 1403px #FFFFFF , 378px 1067px #FFFFFF , 972px 1355px #FFFFFF;
   animation: animStar 75s linear infinite;
   border-radius: 10px;
 }
@@ -861,11 +861,11 @@
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 255px;
-  height: 255px;
-  transform: rotate(-29deg);
+  width: 78px;
+  height: 78px;
+  transform: rotate(74deg);
   background: transparent;
-  box-shadow: 1799px 80px #FFFFFF , 1106px 191px #FFFFFF , 440px 1141px #FFFFFF;
+  box-shadow: 68px 1403px #FFFFFF , 378px 1067px #FFFFFF , 972px 1355px #FFFFFF;
   border-radius: 10px;
 }
 
@@ -939,6 +939,12 @@ header nav a {
 }
 header nav a:hover {
   color: #666;
+}
+
+input[type=text] {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
 input[type=checkbox] {
@@ -1419,8 +1425,8 @@ form .field {
 .button-toggle {
   position: absolute;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 27px;
   margin: 0 20px;
   background-color: transparent;
   border: none;
@@ -1571,6 +1577,11 @@ form .field {
   .contacts .col-lg-7 {
     display: none;
   }
+
+  .form .actions .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 1360px) and (min-width: 768px) {
   header nav div a {
@@ -1584,11 +1595,12 @@ form .field {
 
   h2 {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 0;
   }
 
   .illustration {
@@ -1641,17 +1653,23 @@ form .field {
 
   .form {
     bottom: 30px;
+    width: 400px;
   }
   .form .front {
     background-size: cover;
     background-position: top center;
-    height: 50%;
+    height: 160px;
+    width: 410px;
+  }
+  .form .form_wrap {
+    height: 160px;
   }
   .form:after {
-    height: 50%;
+    height: 165px;
+    width: 410px;
   }
   .form:hover .form_wrap {
-    height: 490.96px;
+    height: 420px;
   }
 }
 @media (max-width: 768px) {
@@ -2200,7 +2218,7 @@ form .field {
   }
 
   .form .form_wrap {
-    height: 130px;
+    height: 105px;
   }
   .form .form_wrap form {
     padding: 10px 10px 190px 10px;

@@ -69,6 +69,12 @@ header {
     }
 }
 
+input[type="text"]{
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    appearance: none!important;
+}
+
 input[type="checkbox"]{
     -webkit-appearance: checkbox!important;
     -moz-appearance: checkbox!important;

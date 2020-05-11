@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!--[if lt IE 7]>
       <p class="browsehappy">
         Вы используете <strong>УСТАРЕЛЫЙ</strong> браузер. Пожалуйста
@@ -107,7 +108,107 @@
             </div>
             <div class="popup-overlay"></div>
         </div>
-        <div id="order" class="popup"> 
+        <div id="order-1" class="popup"> 
+            <div class="popup-content">
+                <div class="popup-caption">Заказать</div> 
+                <div class="popup-close"><i class="fal fa-times"></i></div>
+                <form id="send_message">
+                    <input type="hidden" name="type" value="landing_order_webinar">
+                    <div class="field">
+                        <label>Ваше имя <span class="colored red">*</span></label>
+                        <input type="text" name="name" placeholder="ФИО" autocomplete="off" required="">
+                    </div>
+                    <div class="field">
+                        <label>Email <span class="colored red">*</span></label>
+                        <input type="email" name="email" placeholder="" autocomplete="off" required="">
+                    </div>
+                    <div class="field_check">
+                        <input type="checkbox" name="agree" id="field-order-agree" required="">
+                        <label for="field-order-agree">Я согласен(а) c условиями <a href="docs/privacy-policy.pdf" target="_blank">политики обработки персональных данных</a>, <a href="docs/user-agreement.pdf" target="_blank">пользовательского соглашения</a> и <a href="docs/public-offer.pdf" target="_blank">публичной оферты</a></label>
+                    </div>
+                    <div class="actions">
+                        <button class="btn" type="submit" data-action="order">Заказать</button>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-overlay"></div>
+        </div>
+        <div id="order-2" class="popup"> 
+            <div class="popup-content">
+                <div class="popup-caption">Заказать</div> 
+                <div class="popup-close"><i class="fal fa-times"></i></div>
+                <form id="send_message">
+                    <input type="hidden" name="type" value="landing_order_webinar">
+                    <div class="field">
+                        <label>Ваше имя <span class="colored red">*</span></label>
+                        <input type="text" name="name" placeholder="ФИО" autocomplete="off" required="">
+                    </div>
+                    <div class="field">
+                        <label>Email <span class="colored red">*</span></label>
+                        <input type="email" name="email" placeholder="" autocomplete="off" required="">
+                    </div>
+                    <div class="field_check">
+                        <input type="checkbox" name="agree" id="field-order-agree" required="">
+                        <label for="field-order-agree">Я согласен(а) c условиями <a href="docs/privacy-policy.pdf" target="_blank">политики обработки персональных данных</a>, <a href="docs/user-agreement.pdf" target="_blank">пользовательского соглашения</a> и <a href="docs/public-offer.pdf" target="_blank">публичной оферты</a></label>
+                    </div>
+                    <div class="actions">
+                        <button class="btn" type="submit" data-action="order">Заказать</button>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-overlay"></div>
+        </div>
+        <div id="order-3" class="popup"> 
+            <div class="popup-content">
+                <div class="popup-caption">Заказать</div> 
+                <div class="popup-close"><i class="fal fa-times"></i></div>
+                <form id="send_message">
+                    <input type="hidden" name="type" value="landing_order_webinar">
+                    <div class="field">
+                        <label>Ваше имя <span class="colored red">*</span></label>
+                        <input type="text" name="name" placeholder="ФИО" autocomplete="off" required="">
+                    </div>
+                    <div class="field">
+                        <label>Email <span class="colored red">*</span></label>
+                        <input type="email" name="email" placeholder="" autocomplete="off" required="">
+                    </div>
+                    <div class="field_check">
+                        <input type="checkbox" name="agree" id="field-order-agree" required="">
+                        <label for="field-order-agree">Я согласен(а) c условиями <a href="docs/privacy-policy.pdf" target="_blank">политики обработки персональных данных</a>, <a href="docs/user-agreement.pdf" target="_blank">пользовательского соглашения</a> и <a href="docs/public-offer.pdf" target="_blank">публичной оферты</a></label>
+                    </div>
+                    <div class="actions">
+                        <button class="btn" type="submit" data-action="order">Заказать</button>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-overlay"></div>
+        </div>
+        <div id="order-4" class="popup"> 
+            <div class="popup-content">
+                <div class="popup-caption">Заказать</div> 
+                <div class="popup-close"><i class="fal fa-times"></i></div>
+                <form id="send_message">
+                    <input type="hidden" name="type" value="landing_order_webinar">
+                    <div class="field">
+                        <label>Ваше имя <span class="colored red">*</span></label>
+                        <input type="text" name="name" placeholder="ФИО" autocomplete="off" required="">
+                    </div>
+                    <div class="field">
+                        <label>Email <span class="colored red">*</span></label>
+                        <input type="email" name="email" placeholder="" autocomplete="off" required="">
+                    </div>
+                    <div class="field_check">
+                        <input type="checkbox" name="agree" id="field-order-agree" required="">
+                        <label for="field-order-agree">Я согласен(а) c условиями <a href="docs/privacy-policy.pdf" target="_blank">политики обработки персональных данных</a>, <a href="docs/user-agreement.pdf" target="_blank">пользовательского соглашения</a> и <a href="docs/public-offer.pdf" target="_blank">публичной оферты</a></label>
+                    </div>
+                    <div class="actions">
+                        <button class="btn" type="submit" data-action="order">Заказать</button>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-overlay"></div>
+        </div>
+        <div id="order-5" class="popup"> 
             <div class="popup-content">
                 <div class="popup-caption">Заказать</div> 
                 <div class="popup-close"><i class="fal fa-times"></i></div>
@@ -209,7 +310,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/3.svg');"></div>
-                        <button class="btn btn-purple order">
+                        <button class="btn btn-purple" id="order-1btn">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -227,7 +328,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/4.svg');"></div>
-                        <button class="btn btn-cyan order">
+                        <button class="btn btn-cyan" id="order-2btn">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -245,7 +346,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/5.svg');"></div>
-                        <button class="btn btn-purple order">
+                        <button class="btn btn-purple" id="order-3btn">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -263,7 +364,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/6.svg');"></div>
-                        <button class="btn btn-blue order">
+                        <button class="btn btn-blue" id="order-4btn">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -281,7 +382,7 @@
                     </div>
                     <div class="col-lg-7 slide-illustration">
                         <div class="illustration" style="background-image:url('app/assets/illustrations/7.svg');"></div>
-                        <button class="btn btn-cyan order">
+                        <button class="btn btn-cyan" id="order-5btn">
                             <span class="emoji"><i class="twa twa-smiling-face-with-sunglasses"></i></span>
                             <span class="text">Заказать</span>
                         </button>
@@ -340,7 +441,7 @@
                     <h1>Обратная связь</h1>
                     <p>Если у вас остались вопросы, напишите нам</p>
                 </div>
-                <div class="form" id="send_message">
+                <div class="form" action="mailto:mr.craaazy@gmail.com" id="send_message">
                     <div class="front image_holder"></div>
                     <div class="form_wrap">
                         <form class="feedback">

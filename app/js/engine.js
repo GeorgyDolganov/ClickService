@@ -12,27 +12,22 @@ $('.nav-item').click(function (event) {
 
 $(document).ready(function(){
 	$('body').css({'background-color': '#'+$('.section:eq(0)').data('color')});
+	
 	Reload();
 });
+
 
 function update_section(destination) {
 	console.log($('.section:eq('+destination.index+')').data('color')); 
 	$('body').css({'background-color': '#'+$('.section:eq('+destination.index+')').data('color')});
 	$('header').attr('data-slide', $('.section:eq('+destination.index+')').attr('id'));
 	$('.section.init').removeClass('init');
-	setInterval(function(){
-		fullpage_api.moveSlideRight();
-	},10000);
 }
 
 function update_slide(destination) {
 	console.log($('.slide:eq('+destination.index+')').data('color')); 
 	$('body').css({'background-color': '#'+$('.slide:eq('+destination.index+')').data('color')});
 	$('header').attr('data-slide', $('.slide:eq('+destination.index+')').attr('id'));
-	// $('.slide.init').removeClass('init');
-	// setTimeout(function(){
-	// 	fullpage_api.moveSlideRight();
-	// },10000);
 }
 
 /*! Reloads page on every visit */
@@ -46,6 +41,8 @@ function Reload() {
 		};
 	}
 } 
+
+
 
 $('body').on('submit', '#send_message form', function(e){ 
 	e.preventDefault();
@@ -62,9 +59,29 @@ $('.send_website').click(function(){
 	$('#order_webinar').addClass('active');
 });
 
-$('.order').click(function(){ 
+$('#order-1btn').click(function(){ 
 	$('.popup').removeClass('active');
-	$('#order').addClass('active');
+	$('#order-1').addClass('active');
+});
+
+$('#order-2btn').click(function(){ 
+	$('.popup').removeClass('active');
+	$('#order-2').addClass('active');
+});
+
+$('#order-3btn').click(function(){ 
+	$('.popup').removeClass('active');
+	$('#order-3').addClass('active');
+});
+
+$('#order-4btn').click(function(){ 
+	$('.popup').removeClass('active');
+	$('#order-4').addClass('active');
+});
+
+$('#order-5btn').click(function(){ 
+	$('.popup').removeClass('active');
+	$('#order-5').addClass('active');
 });
 
 $('#whatsapp-btn').click(function(){ 
@@ -91,6 +108,17 @@ $('body').on('submit', '#order form', function(e){
 
 function send_message_from_landing(f) {
 	window.location='thanks/';
+	Email.send({
+		Host : "smtp.elasticemail.com",
+		Username : "mr.craaazy@gmail.com",
+		Password : "79E634319C121614040393F99951FD23018D",
+		To : 'mr.craaazy@gmail.com',
+		From : "mr.craaazy@gmail.com",
+		Subject : "Сюда заголовок",
+		Body : "Сюда текст"
+	}).then(
+	  message => alert(message)
+	);
 }
 
 var myFullpage = new fullpage('#fullpage', {
@@ -114,8 +142,8 @@ var myFullpage = new fullpage('#fullpage', {
 	scrollBar: false,
 	easing: 'easeInOutCubic',
 	easingcss3: 'ease-in-out',
-	loopBottom: true,
-	loopTop: true,
+	loopBottom: false,
+	loopTop: false,
 	loopHorizontal: true,
 	continuousVertical: false,
 	continuousHorizontal: true,
@@ -123,13 +151,13 @@ var myFullpage = new fullpage('#fullpage', {
 	interlockedSlides: false,
 	dragAndMove: true,
 	offsetSections: false,
-	resetSliders: false,
+	resetSliders: true,
 	fadingEffect: false,
 	normalScrollElements: '#element1, .element2',
 	scrollOverflow: false,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,
-	touchSensitivity: 30,
+	touchSensitivity: 50,
 	bigSectionsDestination: null,
 
 	//Accessibility
@@ -161,5 +189,15 @@ var myFullpage = new fullpage('#fullpage', {
 	},
 	onLeave: function(origin, destination, direction){
 		update_section(destination);
+		console.log(origin.anchor);
+		console.log(destination.anchor);
+		if (origin.anchor == "HereAreExamples" || origin.anchor == "WeCanHelpYou"){
+			clearInterval(timer)
+		}
+		if (destination.anchor == "HereAreExamples" || destination.anchor == "WeCanHelpYou"){
+			timer = setInterval(function(){
+				fullpage_api.moveSlideRight();
+			},3000);
+		}
 	}
 });
