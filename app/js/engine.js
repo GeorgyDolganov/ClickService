@@ -142,7 +142,7 @@ var myFullpage = new fullpage('#fullpage', {
 	scrollBar: false,
 	easing: 'easeInOutCubic',
 	easingcss3: 'ease-in-out',
-	loopBottom: false,
+	loopBottom: true,
 	loopTop: false,
 	loopHorizontal: true,
 	continuousVertical: false,
@@ -157,7 +157,7 @@ var myFullpage = new fullpage('#fullpage', {
 	scrollOverflow: false,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,
-	touchSensitivity: 50,
+	touchSensitivity: 5,
 	bigSectionsDestination: null,
 
 	//Accessibility
