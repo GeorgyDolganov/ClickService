@@ -167,11 +167,11 @@ width.addListener(responsive);
 function send_message_from_landing(f) {
 	window.location = 'thanks/';
 	Email.send({
-		Host: "smtp.elasticemail.com",
-		Username: "mr.craaazy@gmail.com",
-		Password: "79E634319C121614040393F99951FD23018D",
-		To: 'mr.craaazy@gmail.com',
-		From: "mr.craaazy@gmail.com",
+		Host: "...",
+		Username: "...",
+		Password: "...",
+		To: '...',
+		From: "...",
 		Subject: "Сюда заголовок",
 		Body: "Сюда текст"
 	}).then(
